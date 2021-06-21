@@ -1,0 +1,136 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*strat radix*/
+.radix {
+  padding: 100px 0 0;
+}
+
+.radix .detail {
+  /*detail in radix*/
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .radix .detail {
+    /*xs*/
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .radix .detail {
+    /*sm*/
+    margin-bottom: 50px;
+  }
+}
+
+.radix .detail img.main {
+  /*img in detail*/
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.radix .detail h4 {
+  /*h4 in detail*/
+  color: #182028;
+}
+
+.radix .detail p {
+  /*p in detail*/
+  color: #7f7f7f;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.radix .detail .similar {
+  /*similar in detail*/
+  padding: 30px 0;
+}
+
+.radix .detail .similar img {
+  /*img in similar*/
+  margin: 6px 4px;
+}
+
+.radix aside h3 {
+  /*h3 in aside in radix*/
+  font-size: 30px;
+  color: #182028;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.radix aside h5 {
+  /*h5 in aside in radix*/
+  color: #182028;
+}
+
+.radix aside p {
+  /*p in aside in radix*/
+  color: #7f7f7f;
+}
+
+.radix aside p a {
+  /*a in p*/
+  color: #7f7f7f;
+}
+
+.radix aside p a:hover {
+  /*when hover on a in p*/
+  color: #FF4800;
+}
+
+.radix .next-prev {
+  /*next-prev in radix*/
+  padding: 80px 0;
+}
+
+.radix .next-prev .prev,
+.radix .next-prev .next {
+  /*next , prev in next-prev*/
+  color: #182028;
+  cursor: pointer;
+}
+
+.radix .next-prev .prev:hover,
+.radix .next-prev .next:hover {
+  /*when hover on next , prev*/
+  color: #FF4800;
+}
+
+.radix aside p a, .radix .next-prev .prev,
+.radix .next-prev .next {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*end radix*/

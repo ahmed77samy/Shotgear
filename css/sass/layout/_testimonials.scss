@@ -1,0 +1,73 @@
+@import "../helpers/var";
+/*start testimonials*/
+.testimonials {
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5*/
+        color: $or;
+    }
+    h2 {
+        /*h2*/
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .photos {
+        /*photos in testimonials*/
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        /*content in testimonials*/
+        height: auto;
+        padding: 30px;
+        .testi {
+            /*testi in content*/
+            overflow: hidden;
+            display: none;
+            h3 {
+                /*h3 in testi*/
+                margin: 0 0 40px;
+                color: $bk
+            }
+            p {
+                /*p in testi*/
+                color: $wr2;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+            h4 {
+                /*h4 in testi*/
+                color: $bk;
+                float: left;
+                margin: 0 10px 0 0;
+            }
+            span {
+                /*span in testi*/
+                color: $or;
+                float: left;
+            }
+        }
+    }
+    .control {
+        /*control in testimonials*/
+        padding: 30px;
+        span {
+            /*span in control*/
+            display: inline-block;
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            background: $bk-opacity-5;
+            cursor: pointer;
+            @extend %transition3;
+            &:hover,&.active {
+                background: $or
+            }
+        }
+    }
+}
+@import "../helpers/extend";
+/*end testimonials*/

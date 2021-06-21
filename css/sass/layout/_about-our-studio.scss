@@ -1,0 +1,30 @@
+@import "../helpers/var";
+/*start about-our-studio*/
+.about-our-studio {
+    /*about-our-studio*/
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5 in about-our-studio*/
+        color: $or;
+    }
+    h2 {
+        /*h2 in about-our-studio*/
+        color: $bk;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    p {
+        /*p in about-our-studio*/
+        color: $wr2;
+        margin-bottom: 40px;
+    }
+    .btn-custom {
+        /*btn-custom in form*/
+        color: $wh;
+        &:focus,&:hover {
+            color: $wh;
+        }
+    }
+}
+/*end about-our-studio*/

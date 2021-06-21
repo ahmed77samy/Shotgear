@@ -1,0 +1,233 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*start recent-project*/
+.recent-project {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.recent-project h5 {
+  /*h5 in recent-project*/
+  color: #FF4800;
+}
+
+.recent-project h2 {
+  /*h2 in recent-project*/
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.recent-project .tabs {
+  /*tabs in recent-project*/
+  margin-bottom: 40px;
+}
+
+.recent-project .tabs span {
+  /*span in tabs*/
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+.recent-project .tabs span a {
+  /*custom-anchor in tabs*/
+  color: #182028;
+  cursor: pointer;
+}
+
+.recent-project .tabs span a::before, .recent-project .tabs span a::after {
+  /*before & after custom-anchor in tabs*/
+  background: #FF4800;
+}
+
+.recent-project .tabs span a:hover, .recent-project .tabs span a.active {
+  /*hover & active custom-anchor in tabs*/
+  color: #FF4800;
+}
+
+.recent-project .gallery .col-md-4, .recent-project .gallery .col-md-6 {
+  /*grid in gallery for bootstrap*/
+  padding: 2px;
+}
+
+.recent-project .gallery .item {
+  /*item in gallery*/
+  overflow: hidden;
+  position: relative;
+}
+
+.recent-project .gallery .item img {
+  /*img in item*/
+  width: 100%;
+  height: auto;
+}
+
+.recent-project .gallery .item .over-lay {
+  /*over-lay in item*/
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 32, 40, 0.9);
+  padding: 40% 0;
+}
+
+.recent-project .gallery .item .over-lay h4 {
+  /*h4 in over-lay*/
+  color: #dddfdf;
+}
+
+.recent-project .gallery .item .over-lay h4:hover {
+  /*when hover on h4*/
+  color: #FF4800;
+}
+
+.recent-project .gallery .item .over-lay .zoom-in-out {
+  /*zoom-in-out in over-lay*/
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  width: 100%;
+}
+
+.recent-project .gallery .item .over-lay .zoom-in-out span {
+  /*span in zoom-in-out*/
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.recent-project .gallery .item .over-lay .zoom-in-out span.active, .recent-project .gallery .item .over-lay .zoom-in-out span:hover {
+  /*span active,hover in zoom-in-out*/
+  color: #FF4800;
+}
+
+.recent-project .gallery .item .cancel {
+  /*cancel in item*/
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.recent-project .gallery .item .cancel:before {
+  /*before cancel*/
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.recent-project .gallery .item:hover {
+  /*when hover on item*/
+}
+
+.recent-project .gallery .item:hover .over-lay {
+  left: 0;
+}
+
+.recent-project .gallery .item.zin img {
+  /*img when click on zoomin*/
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.recent-project .gallery .item.zin .cancel {
+  /*cancel when click on zoomin*/
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.recent-project .gallery .item.zin .cancel:before {
+  /*before cancel when click on zoomin*/
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.recent-project .gallery .item.zin .cancel:hover:before {
+  /*before cancel when click on zoomin and hover on cancel*/
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.recent-project .gallery .item.zin:hover img {
+  /*hover on img if click on zoomin*/
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.recent-project .gallery .item.zin:hover .over-lay {
+  /*over-lay if click on zoomin*/
+  left: -100%;
+}
+
+.recent-project .more {
+  /*more in gallery pages only*/
+  margin: 70px 0 100px;
+}
+
+.recent-project .more .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.recent-project .more .btn-custom:focus {
+  color: #fff;
+}
+
+.recent-project .more span.pages {
+  /*span in more in gallery pages only*/
+  display: inline-block;
+  margin: 0 4px;
+  width: 40px;
+  height: 40px;
+  background: #FF4800;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.recent-project .more span.pages.active, .recent-project .more span.pages:hover {
+  /*span active,hover in more in gallery pages only*/
+  background: #182028;
+}
+
+.recent-project .gallery .item .over-lay, .recent-project .gallery .item .over-lay h4, .recent-project .gallery .item .over-lay .zoom-in-out span, .recent-project .gallery .item .cancel, .recent-project .more span.pages {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*end recent-project*/

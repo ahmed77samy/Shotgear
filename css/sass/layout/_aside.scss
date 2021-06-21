@@ -1,0 +1,125 @@
+@import "../helpers/var";
+/*start aside*/
+aside {
+    margin: 100px 0 0;
+    form.search {
+        /*form.search in aside*/
+        background: $offwh;
+		padding: 20px;
+		margin-bottom: 40px;
+		.form-control {
+            /*form-control in form.search*/
+            background: transparent;
+			border-radius: 0;
+			border: none;
+			outline: none;
+			color: $bk;
+			box-shadow: none;
+			text-transform: capitalize;
+			cursor: unset;
+			&::placeholder {
+                /*placeholder form-control*/
+                color: $wr2;
+				font-size: 13px;
+			}
+			&:focus {
+                /*focus form-control*/
+                box-shadow: none;
+			}
+		}
+	}
+	section {
+        /*section in aside*/
+        border: 2px solid $offwh;
+		background: $offwh;
+		margin: 0 0 40px;
+		.header {
+            /*header in section*/
+            background: $wh;
+			color: $bk;
+			padding: 10px 40px;
+		}
+		.body {
+            /*body in section*/
+            padding: 10px 40px;
+			.post {
+                /*post in body*/
+                overflow: hidden;
+				padding: 25px 0;
+				border-bottom: 1px solid $wh;
+				&.three {
+                    /*post-three in body*/
+                    border: none;
+				}
+				img {
+                    /*img in post*/
+                    float: left;
+					margin-right: 12px;
+				}
+				h5 {
+                    /*h5 in post*/
+                    color: $bk;
+					display: inline-block;
+					line-height: 25px;
+                    margin-top: 10px;
+                    @extend %transition3;
+                    &:hover {
+                        /*when hover on h5 in post*/
+                        color: $or;
+                    }
+                }
+				p {
+                    /*h5 in post*/
+                    color: $wr2;
+					font-size: 12px;
+                }
+                
+			}
+		}
+		&.section-two {
+            /*section-two in aside*/
+            .body {
+                h5 {
+                    /*h5 in section-two*/
+                    margin: 35px 0;
+                    color: $bk;
+                    @extend %transition3;
+					&:hover {
+                        /*when hover on h5 in section-two*/
+                        color: $or;
+					}
+				}
+			}
+		}
+		&.section-three {
+            .body {
+                /*body in section-three in aside*/
+                padding: 40px;
+				h5 {
+                    /*h5 in section-three*/
+                    color: $bk;
+					display: inline;
+                    line-height: 35px;
+                    @extend %transition3;
+					&:hover {
+                        /*when hover on h5 in section-three*/
+                        color: $or;
+					}
+				}
+			}
+		}
+		&.section-four {
+            .body {
+                /*body in section-four in aside*/
+				padding: 40px;
+				text-align: center;
+				img {
+                    /*im in section-four*/
+                    margin-bottom: 5px
+				}
+			}
+		}
+	}
+}
+@import "../helpers/extend";
+/*end aside*/

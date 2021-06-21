@@ -1,0 +1,649 @@
+<!--
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHOTGEAR 2</title>
+    <link rel="shortcut icon" href="photo/logo/favicon.png">
+    <link rel="stylesheet" href="css/normaliz.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.min.css">
+    <link rel="stylesheet" href="css/settings.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <div class="loading"><!--loading-->
+        <div class="loader loader10"><!--loader--></div>
+    </div><!--loading-->
+
+    <div class="to-up text-center"><!--to-up-->
+        <i class="demo-icon icon-up-big">&#xe840;</i><!--icon-->
+    </div><!--to-up-->
+
+    <header><!--header-->
+        <nav><!--nav-->
+            <div class="container-fluid"><!--container-->
+                <div class="row"><!--row-->
+                    <div class="col-md-2 col-xs-4 pull-left"><!--first grid-->
+                        <div class="logo"><!--logo-->
+                            <img src="photo/logo/logo.png" alt="LOGO"><!--img-->
+                        </div><!--logo-->
+                    </div><!--first grid-->
+                    <div class="col-md-8 hidden-sm hidden-xs" style="padding-left: 30px;padding-right:0;"><!--second grid-->
+                        <div class="ul"><!--ul-->
+                            <ul class="list-unstyled text-uppercase text-center"><!--ul-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/about.html" class="anc custom-a">about</a></li>
+                                <li><a href="pages/services.html" class="anc custom-a">services</a></li>
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="pages/gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="pages/gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="pages/gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="pages/blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="pages/blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="pages/blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="pages/contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--ul-->
+                    </div><!--second grid-->
+                    <div class="col-md-2 col-xs-4 pull-right"><!--third grid-->
+                        <div class="menu-search pull-right"><!--menu-search-->
+                            <i class="demo-icon icon-search search"><!--icon-->&#xe802;</i>
+                            <i class="demo-icon icon-list-bullet menu"><!--icon-->&#xf0ca;</i>
+                        </div><!--menu-search-->
+                    </div><!--third grid-->
+                    <div class="fixed-search"><!--fixed-search-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="container"><!--container-->
+                                <div class="cancel center-block text-center"><!--cancel-->
+                                    <a href="#" class="anc"><i class="demo-icon icon-cancel">&#xe80c;</i></a>
+                                </div><!--cancel-->
+                                <form action="#"><!--form-->
+                                    <input type="text" id="search" class="btn" placeholder="SEARCH HERE"><!--input-->
+                                    <i class="demo-icon icon-search pull-right">&#xe802;</i><!--icon-->
+                                </form><!--form-->
+                            </div><!--container-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-search-->
+                    <div class="fixed-menu"><!--fixed-menu-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="cancel center-block text-center"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                            <ul class="list-unstyled text-uppercase text-center ul"><!--ul-->
+                                <li class="drop" data-drop=".one"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down one"><!--drop-down-->
+                                        <li><a href="index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/about.html" class="anc custom-a">about</a></li>
+                                <li><a href="pages/services.html" class="anc custom-a">services</a></li>
+                                <li class="drop" data-drop=".two"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down two"><!--drop-down-->
+                                        <li><a href="pages/gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="pages/gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="pages/gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop" data-drop=".three"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down three"><!--drop-down-->
+                                        <li><a href="pages/blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="pages/blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="pages/blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="pages/contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-menu-->
+                </div><!--row-->
+            </div><!--container-->
+        </nav><!--nav-->
+    </header><!--header-->
+
+    <div class="tp-bannercontainer"><!--tp-bannercontainer-->
+        <div class="tp-leftarrow tparrows default hidearrows"><!--tparrows-->
+            <i class="demo-icon icon-left-open">&#xe837;</i><!--icon-->
+        </div><!--tparrows-->
+        <div class="tp-rightarrow tparrows default hidearrows"><!--tparrows-->
+            <i class="demo-icon icon-right-open">&#xe836;</i><!--icon-->
+        </div><!--tparrows-->
+        <div class="tp-banner" id="tp-banner"><!--tp-banner-->
+            <ul class="list-unstyled"><!--ul-->
+                <!--grid 1-->
+                <li 
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner2.png" 
+                    alt="BANNER 1"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 1-->
+                <!--grid 2-->
+                <li 
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner4.png" 
+                    alt="BANNER 2"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 2-->
+                <!--grid 3-->
+                <li 
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner6.png" 
+                    alt="BANNER 3"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 3-->
+            </ul><!--ul-->
+        </div><!--tp-banner-->
+    </div><!--tp-bannercontainer-->
+
+    <div class="exceptional-services"><!--exceptional-services-->
+        <div class="container"><!--container-->
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="text"><!--text-->
+                        <h5 class="text-uppercase"><!--h5-->exceptional services</h5>
+                        <h2 class="text-uppercase"><!--h2-->WHAT services the best</h2>
+                        <p><!--p-->We are committed to providing our customers with exceptional service while offering our employees the best training. Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the 1500s.</p>
+                        <a href="pages/services.html" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                            <span></span>
+                            <span></span>
+                            read more
+                        </a><!--btn-custom-->
+                    </div><!--text-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="photo"><!--photo-->
+                        <img src="photo/exceptional-services/1.png" alt="service"><!--img-->
+                    </div><!--photo-->
+                </div><!--second grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--exceptional-services-->
+
+    <div class="our-team"><!--our-team-->
+        <div class="container"><!--container-->
+            <h5 class="text-center text-uppercase"><!--h5-->our team</h5>
+            <h2 class="text-center text-uppercase lighter"><!--h2-->EXPERT PEOPLE</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--first grid-->
+                    <div class="section"><!--section-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/team/1.png" alt="team 1"><!--img-->
+                        </div><!--photo-->
+                        <div class="info text-center"><!--info-->
+                            <p><!--p name--><a href="#" class="anc">MIKE HARDSON, </a></p>
+                            <span><!--span job-->SENIOR DESIGN</span>
+                        </div><!--info-->
+                    </div><!--section-->
+                </div><!--first grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--second grid-->
+                    <div  class="section"><!--section-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/team/2.png" alt="team 2"><!--img-->
+                        </div><!--photo-->
+                        <div class="info text-center"><!--info-->
+                            <p><!--p name--><a href="#" class="anc">ROSE FORD, </a></p>
+                            <span><!--span job-->EDITOR</span>
+                        </div><!--info-->
+                    </div><!--section-->
+                </div><!--second grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--third grid-->
+                    <div class="section"><!--section-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/team/3.png" alt="team 3"><!--img-->
+                        </div><!--photo-->
+                        <div class="info text-center"><!--info-->
+                            <p><!--p name--><a href="#" class="anc">JHON ALBERT, </a></p>
+                            <span><!--span job-->BRAND OFFICER</span>
+                        </div><!--info-->
+                    </div><!--section-->
+                </div><!--third grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--fourty grid-->
+                    <div class="section"><!--section-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/team/4.png" alt="team 4"><!--img-->
+                        </div><!--photo-->
+                        <div class="info text-center"><!--info-->
+                            <p><!--p name--><a href="#" class="anc">MAIA ROBERT, </a></p>
+                            <span><!--span job-->PHOTO MONITOR</span>
+                        </div><!--info-->
+                    </div><!--section-->
+                </div><!--fourty grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--our-team-->
+
+    <div class="testimonials"><!--testimonials-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->testimonials</h5>
+            <h2 class="text-uppercase text-center lighter"><!--h2-->WHAT OUR CLIENT SAYS</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="photos"><!--photos-->
+                        <img src="photo/testimonials/1.png" alt="customer"><!--img-->
+                    </div><!--photos-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="content"><!--content-->
+                        <div class="testi one"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->jose Anderson,</h4>
+                            <span><!--span job-->Ceo Of Softking</span>
+                        </div><!--testi-->
+                        <div class="testi two"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->Albert Thomson,</h4>
+                            <span><!--span job-->Manager of meipaly</span>
+                        </div><!--testi-->
+                        <div class="testi three"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->Mary Andrson,</h4>
+                            <span><!--span job-->Supervisor of Listingo</span>
+                        </div><!--testi-->
+                    </div><!--content-->
+                    <div class="control"><!--control-->
+                        <span class="active" data-fade=".one"></span><!--one-->
+                        <span data-fade=".two"></span><!--two-->
+                        <span data-fade=".three"></span><!--three-->
+                    </div><!--control-->
+                </div><!--second grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--testimonials-->
+
+    <div class="our-time-line"><!--our-time-line-->
+        <div class="container"><!--container-->
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="text"><!--text-->
+                        <h5 class="text-uppercase"><!--h5-->OUR time-line</h5>
+                        <h2 class="text-uppercase lighter"><!--h2-->REAL EXPERIENCE</h2>
+                        <div class="count"><!--one count-->
+                            <div class="one-time time pull-left"><!--time-->01</div>
+                            <div class="labell pull-right"><!--labell-->
+                                <h4 class="text-uppercase"><!--h4-->01 shoot</h4>
+                                <p><!--p-->Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam architecto amet voluptate quibusdam nam beatae similique.</p>
+                            </div><!--labell-->
+                        </div><!--one count-->
+                        <div class="count"><!--two count-->
+                            <div class="two-time time pull-left"><!--time-->02</div>
+                            <div class="labell pull-right"><!--labell-->
+                                <h4 class="text-uppercase"><!--h4-->02 shoot</h4>
+                                <p><!--p-->Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam architecto amet voluptate quibusdam nam beatae similique.</p>
+                            </div><!--labell-->
+                        </div><!--two count-->
+                        <div class="count"><!--three count-->
+                            <div class="three-time time pull-left"><!--time-->03</div>
+                            <div class="labell pull-right"><!--labell-->
+                                <h4 class="text-uppercase"><!--h4-->03 shoot</h4>
+                                <p><!--p-->Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum magnam architecto amet voluptate quibusdam nam beatae similique.</p>
+                            </div><!--labell-->
+                        </div><!--three count-->
+                    </div><!--text-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="photo"><!--photo-->
+                        <img src="photo/time-line/1.png" alt="time-line"><!--img-->
+                        <div class="overflow"><!--overflow-->
+                            <h4 class="text-uppercase"><!--h4-->TOTAL DESIGN FREEDOM<br>FOR EVERYONE.</h4>
+                        </div><!--overflow-->
+                    </div><!--photo-->
+                </div><!--second grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--our-time-line-->
+
+    <div class="blog"><!--blog-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->our blog</h5>
+            <h2 class="text-uppercase text-center lighter"><!--h2-->LATEST BLOG</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/1.png" alt="blog_1"><!--img-->
+                            <div class="date text-center text-capitalize"><!--date-->
+                                <span>24</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 03 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 06 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/2.png" alt="blog_2"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>17</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 22 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 19 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--second grid-->
+                <div class="col-md-6 col-xs-12"><!--third grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/3.png" alt="blog_3"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>15</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 15 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 10 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--third grid-->
+                <div class="col-md-6 col-xs-12"><!--fourty grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/4.png" alt="blog_4"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>2</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 30 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 16 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--fourty grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--blog-->
+
+    <div class="studio-near-you text-center"><!--studio-near-you-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->OUR studio</h5>
+            <h2 class="text-uppercase lighter"><!--h2-->studio NEAR YOU</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--first grid-->
+                    <div class="place"><!--place-->
+                        <h4 class="text-uppercase"><!--h4-->Studio Gallery</h4>
+                        <p class="text-uppercase"><!--p-->22 Texas West Hills<p>needhelp@shotgear.com<p>222 777 000</p>
+                    </div><!--place-->
+                </div><!--first grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--second grid-->
+                    <div class="place"><!--place-->
+                        <h4 class="text-uppercase"><!--h4-->Family Studio</h4>
+                        <p class="text-uppercase"><!--p-->5 Federal Street Boston<p>needhelp@shotgear.com<p>222 777 000</p>
+                    </div><!--place-->
+                </div><!--second grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--third grid-->
+                    <div class="place"><!--place-->
+                        <h4 class="text-uppercase"><!--h4-->Simple Studio</h4>
+                        <p class="text-uppercase"><!--p-->8th Broklyn New York<p>needhelp@shotgear.com<p>222 777 000</p>
+                    </div><!--place-->
+                </div><!--third grid-->
+                <div class="col-md-3 col-sm-6 col-xs-12"><!--fourty grid-->
+                    <div class="place"><!--place-->
+                        <h4 class="text-uppercase"><!--h4-->Creative Collective</h4>
+                        <p class="text-uppercase"><!--p-->3 Lombabr 50 baltimore<p>needhelp@shotgear.com<p>222 777 000</p>
+                    </div><!--place-->
+                </div><!--fourty grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--studio-near-you-->
+
+    <div class="subscrib"><!--subscrib-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->DON’T MISS OUT OUR LATEST UPDATES</h5>
+            <h2 class="text-uppercase text-center"><!--h2-->SUBSCRIBE US</h2>
+            <form class="form-inline" action="#"><!--form-->
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Your E-Mail"><!--input-->
+                <a href="#" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                    <span></span>
+                    <span></span>
+                    subscrib now
+                </a><!--btn-custom-->
+            </form><!--form-->
+        </div><!--container-->
+    </div><!--subscrib-->
+
+    <footer><!--footer-->
+        <div class="container"><!--container-->
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-xs-12"><!--first grid-->
+                    <div class="services-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->OUR SERVICE</h3>
+                        <p><a href="#" class="anc">Car accident</a></p><!--p-->
+                        <p><a href="#" class="anc">Personal injury</a></p><!--p-->
+                        <p><a href="#" class="anc">Family law</a></p><!--p-->
+                        <p><a href="#" class="anc">Bank and financial</a></p><!--p-->
+                        <p><a href="#" class="anc">Capital market</a></p><!--p-->
+                        <p><a href="#" class="anc">Employment Law</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--first grid-->
+                <div class="col-md-4 col-xs-12"><!--second grid-->
+                    <div class="contact-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->CONTACT INFO</h3>
+                        <p>4361 Morningview Lane Artland , Pall Street Latimer, IA 50452 / 23654</p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-phone">&#xe82a;</i> +02 - 123 456 789</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-mail">&#xe803;</i> shotgear@mail.com</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-briefcase">&#xe84d;</i> shotgearfirm.inc</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-xs-12"><!--third grid-->
+                    <div class="instgram-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->INSTAGRAM</h3>
+                        <a href="#"><img src="photo/footer/1.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/2.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/3.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/4.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/5.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/6.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/7.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/8.png" alt="INSTAGRAM"></a><!--img-->
+                    </div><!--foot-->
+                </div><!--third grid-->
+            </div><!--row-->
+            <div class="share text-center"><!--share-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-facebook">&#xf09a;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-twitter">&#xf099;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-google">&#xf1a0;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-instagram">&#xf16d;</i></a></span><!--span social-->
+            </div><!--share-->
+        </div><!--container-->
+        <div class="copy-right text-center"><!--copy-right-->
+            <p><!--p-->Copyright<i class="demo-icon icon-copyright">&#xf1f9;</i>2020 All rights reserved | This template is made with <i class="demo-icon icon-heart-empty">&#xe805;</i> by <span>shotgear</span></p>
+        </div><!--copy-right-->
+    </footer><!--footer-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/plugin2.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+.radix {
+  /*start recent-project*/
+  /*end recent-project*/
+  /*start aside*/
+  /*end aside*/
+}
+
+.radix .recent-project {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.radix .recent-project h5 {
+  /*h5 in recent-project*/
+  color: #FF4800;
+}
+
+.radix .recent-project h2 {
+  /*h2 in recent-project*/
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.radix .recent-project .tabs {
+  /*tabs in recent-project*/
+  margin-bottom: 40px;
+}
+
+.radix .recent-project .tabs span {
+  /*span in tabs*/
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+.radix .recent-project .tabs span a {
+  /*custom-anchor in tabs*/
+  color: #182028;
+  cursor: pointer;
+}
+
+.radix .recent-project .tabs span a::before, .radix .recent-project .tabs span a::after {
+  /*before & after custom-anchor in tabs*/
+  background: #FF4800;
+}
+
+.radix .recent-project .tabs span a:hover, .radix .recent-project .tabs span a.active {
+  /*hover & active custom-anchor in tabs*/
+  color: #FF4800;
+}
+
+.radix .recent-project .gallery .col-md-4, .radix .recent-project .gallery .col-md-6 {
+  /*grid in gallery for bootstrap*/
+  padding: 2px;
+}
+
+.radix .recent-project .gallery .item {
+  /*item in gallery*/
+  overflow: hidden;
+  position: relative;
+}
+
+.radix .recent-project .gallery .item img {
+  /*img in item*/
+  width: 100%;
+  height: auto;
+}
+
+.radix .recent-project .gallery .item .over-lay {
+  /*over-lay in item*/
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 32, 40, 0.9);
+  padding: 40% 0;
+}
+
+.radix .recent-project .gallery .item .over-lay h4 {
+  /*h4 in over-lay*/
+  color: #dddfdf;
+}
+
+.radix .recent-project .gallery .item .over-lay h4:hover {
+  /*when hover on h4*/
+  color: #FF4800;
+}
+
+.radix .recent-project .gallery .item .over-lay .zoom-in-out {
+  /*zoom-in-out in over-lay*/
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  width: 100%;
+}
+
+.radix .recent-project .gallery .item .over-lay .zoom-in-out span {
+  /*span in zoom-in-out*/
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.radix .recent-project .gallery .item .over-lay .zoom-in-out span.active, .radix .recent-project .gallery .item .over-lay .zoom-in-out span:hover {
+  /*span active,hover in zoom-in-out*/
+  color: #FF4800;
+}
+
+.radix .recent-project .gallery .item .cancel {
+  /*cancel in item*/
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.radix .recent-project .gallery .item .cancel:before {
+  /*before cancel*/
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.radix .recent-project .gallery .item:hover {
+  /*when hover on item*/
+}
+
+.radix .recent-project .gallery .item:hover .over-lay {
+  left: 0;
+}
+
+.radix .recent-project .gallery .item.zin img {
+  /*img when click on zoomin*/
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.radix .recent-project .gallery .item.zin .cancel {
+  /*cancel when click on zoomin*/
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.radix .recent-project .gallery .item.zin .cancel:before {
+  /*before cancel when click on zoomin*/
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.radix .recent-project .gallery .item.zin .cancel:hover:before {
+  /*before cancel when click on zoomin and hover on cancel*/
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.radix .recent-project .gallery .item.zin:hover img {
+  /*hover on img if click on zoomin*/
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.radix .recent-project .gallery .item.zin:hover .over-lay {
+  /*over-lay if click on zoomin*/
+  left: -100%;
+}
+
+.radix .recent-project .more {
+  /*more in gallery pages only*/
+  margin: 70px 0 100px;
+}
+
+.radix .recent-project .more .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.radix .recent-project .more .btn-custom:focus {
+  color: #fff;
+}
+
+.radix .recent-project .more span.pages {
+  /*span in more in gallery pages only*/
+  display: inline-block;
+  margin: 0 4px;
+  width: 40px;
+  height: 40px;
+  background: #FF4800;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.radix .recent-project .more span.pages.active, .radix .recent-project .more span.pages:hover {
+  /*span active,hover in more in gallery pages only*/
+  background: #182028;
+}
+
+.radix .recent-project .gallery .item .over-lay, .radix .recent-project .gallery .item .over-lay h4, .radix .recent-project .gallery .item .over-lay .zoom-in-out span, .radix .recent-project .gallery .item .cancel, .radix .recent-project .more span.pages, .radix aside section .body .post h5, .radix aside section.section-two .body h5, .radix aside section.section-three .body h5 {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.radix aside {
+  margin: 100px 0 0;
+}
+
+.radix aside form.search {
+  /*form.search in aside*/
+  background: #F4F4F4;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.radix aside form.search .form-control {
+  /*form-control in form.search*/
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  color: #182028;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: capitalize;
+  cursor: unset;
+}
+
+.radix aside form.search .form-control::-webkit-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control:-ms-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control::-ms-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control::placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control:focus {
+  /*focus form-control*/
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.radix aside section {
+  /*section in aside*/
+  border: 2px solid #F4F4F4;
+  background: #F4F4F4;
+  margin: 0 0 40px;
+}
+
+.radix aside section .header {
+  /*header in section*/
+  background: #fff;
+  color: #182028;
+  padding: 10px 40px;
+}
+
+.radix aside section .body {
+  /*body in section*/
+  padding: 10px 40px;
+}
+
+.radix aside section .body .post {
+  /*post in body*/
+  overflow: hidden;
+  padding: 25px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.radix aside section .body .post.three {
+  /*post-three in body*/
+  border: none;
+}
+
+.radix aside section .body .post img {
+  /*img in post*/
+  float: left;
+  margin-right: 12px;
+}
+
+.radix aside section .body .post h5 {
+  /*h5 in post*/
+  color: #182028;
+  display: inline-block;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.radix aside section .body .post h5:hover {
+  /*when hover on h5 in post*/
+  color: #FF4800;
+}
+
+.radix aside section .body .post p {
+  /*h5 in post*/
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.radix aside section.section-two {
+  /*section-two in aside*/
+}
+
+.radix aside section.section-two .body h5 {
+  /*h5 in section-two*/
+  margin: 35px 0;
+  color: #182028;
+}
+
+.radix aside section.section-two .body h5:hover {
+  /*when hover on h5 in section-two*/
+  color: #FF4800;
+}
+
+.radix aside section.section-three .body {
+  /*body in section-three in aside*/
+  padding: 40px;
+}
+
+.radix aside section.section-three .body h5 {
+  /*h5 in section-three*/
+  color: #182028;
+  display: inline;
+  line-height: 35px;
+}
+
+.radix aside section.section-three .body h5:hover {
+  /*when hover on h5 in section-three*/
+  color: #FF4800;
+}
+
+.radix aside section.section-four .body {
+  /*body in section-four in aside*/
+  padding: 40px;
+  text-align: center;
+}
+
+.radix aside section.section-four .body img {
+  /*im in section-four*/
+  margin-bottom: 5px;
+}
+
+.radix .recent-project .gallery .item .over-lay, .radix .recent-project .gallery .item .over-lay h4, .radix .recent-project .gallery .item .over-lay .zoom-in-out span, .radix .recent-project .gallery .item .cancel, .radix .recent-project .more span.pages, .radix aside section .body .post h5, .radix aside section.section-two .body h5, .radix aside section.section-three .body h5 {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}

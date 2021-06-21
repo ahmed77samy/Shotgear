@@ -1,0 +1,592 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*start exceptional-services*/
+.exceptional-services {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+@media (max-width: 767px) {
+  .exceptional-services .text {
+    /*xs*/
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .exceptional-services .text {
+    /*sm*/
+    margin-bottom: 40px;
+  }
+}
+
+.exceptional-services .text h5 {
+  /*h5 in text*/
+  color: #FF4800;
+}
+
+.exceptional-services .text h2 {
+  /*h2 in text*/
+  color: #182028;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.exceptional-services .text p {
+  /*p in text*/
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.exceptional-services .text .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.exceptional-services .text .btn-custom:focus {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .exceptional-services .photo img {
+    /*xs*/
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .exceptional-services .photo img {
+    /*sm*/
+    width: 100%;
+  }
+}
+
+/*end exceptional-services*/
+/*start choose-us*/
+.choose-us {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.choose-us h5 {
+  /*h5 in choose-us*/
+  color: #FF4800;
+}
+
+.choose-us h2 {
+  /*h2 in choose-us*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.choose-us .tabs .item {
+  /*item in tabs*/
+  background: #fcf7f7;
+  color: #182028;
+  padding: 25px 0;
+}
+
+.choose-us .tabs .item h4 {
+  /*h4 in item*/
+  font-size: 14px;
+}
+
+.choose-us .tabs .item h4 a {
+  cursor: pointer;
+}
+
+.choose-us .tabs .item h4 a::after, .choose-us .tabs .item h4 a::before {
+  /*after & before custom-anchor*/
+  background: #FF4800;
+}
+
+.choose-us .tabs .item h4 a:hover, .choose-us .tabs .item h4 a.active {
+  /*hover on custom-anchor*/
+  color: #FF4800;
+}
+
+.choose-us .parent {
+  /*parent in choose-us*/
+  margin-top: 60px;
+}
+
+.choose-us .parent .child {
+  /*child in parent*/
+  display: none;
+}
+
+.choose-us .parent .child .text {
+  /*text in child*/
+  color: #7f7f7f;
+}
+
+@media (max-width: 767px) {
+  .choose-us .parent .child .text {
+    /*xs*/
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .choose-us .parent .child .text {
+    /*sm*/
+    margin-bottom: 30px;
+  }
+}
+
+.choose-us .parent .child .text p:first-of-type {
+  /*first p in text*/
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.choose-us .parent .child .photo {
+  /*photo in child*/
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .choose-us .parent .child .photo img {
+    /*xs*/
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .choose-us .parent .child .photo img {
+    /*sm*/
+    width: 100%;
+  }
+}
+
+.product .pro::before {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.product .pro, .pricing .plan {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end choose-us*/
+/*start our-services*/
+.our-services {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.our-services h5 {
+  /*h5 in our-services*/
+  color: #FF4800;
+}
+
+.our-services h2 {
+  /*h2 in our-services*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.our-services .ser {
+  /*ser in our-services*/
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.our-services .ser.one, .our-services .ser.four {
+  /*ser one&four in our-services*/
+  height: 500px;
+  background: #fcf7f7;
+  padding: 100px 20px;
+}
+
+@media (max-width: 767px) {
+  .our-services .ser.one, .our-services .ser.four {
+    /*xs*/
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .our-services .ser.one, .our-services .ser.four {
+    /*sm*/
+    height: auto;
+  }
+}
+
+.our-services .ser.one img, .our-services .ser.four img {
+  /*img in ser one&four*/
+  margin-bottom: 40px;
+}
+
+.our-services .ser.one h4, .our-services .ser.four h4 {
+  /*h4 in ser one&four*/
+  color: #182028;
+  margin-bottom: 40px;
+}
+
+.our-services .ser.one p, .our-services .ser.four p {
+  /*p in ser one&four*/
+  color: #999;
+  margin-bottom: 40px;
+  line-height: 28px;
+}
+
+/*end our-services*/
+/*start product*/
+.product {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.product h5 {
+  /*h5 in product*/
+  color: #FF4800;
+}
+
+.product h2 {
+  /*h2 in product*/
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.product .pro {
+  /*pro in product*/
+  padding: 50px 15px;
+  position: relative;
+  margin-bottom: 15px;
+  background: #fff;
+  outline: 1px solid #fcf7f7;
+  overflow: hidden;
+}
+
+.product .pro::before {
+  /*before product*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.product .pro h3 {
+  /*h3 in pro*/
+  color: #182028;
+  margin-bottom: 30px;
+}
+
+.product .pro p {
+  /*p in pro*/
+  color: #7f7f7f;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.product .pro img {
+  /*img in pro*/
+  margin-bottom: 20px;
+}
+
+.product .pro:hover {
+  /*when hover on pro*/
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05);
+}
+
+.product .pro:hover::before {
+  left: 100%;
+}
+
+.product .pro::before {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.product .pro, .pricing .plan {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end product*/
+/*start our-time-line*/
+.our-time-line {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.our-time-line .text h5 {
+  /*h5 in text in our-time-line*/
+  color: #FF4800;
+}
+
+.our-time-line .text h2 {
+  /*h2 in text in our-time-line*/
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.our-time-line .text .count {
+  /*count in text*/
+  overflow: hidden;
+  position: relative;
+}
+
+.our-time-line .text .count .time {
+  /*before time in count*/
+  text-align: center;
+  padding: 15px;
+  background: #FF4800;
+  color: #fff;
+  width: 50px;
+}
+
+.our-time-line .text .count .time::before {
+  /*before time in count*/
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 22.5px;
+  width: 2px;
+  height: calc(100% - 60px);
+  background: #FF4800;
+}
+
+.our-time-line .text .count .time.three-time::before {
+  /*before three-time in count*/
+  display: none;
+}
+
+.our-time-line .text .count .labell {
+  /*labell in text*/
+  width: calc(100% - 50px);
+  padding: 0 15px;
+  margin-bottom: 40px;
+  color: #7f7f7f;
+}
+
+.our-time-line .text .count .labell h4 {
+  /*h4 in labell*/
+  margin: 15px 0;
+  font-weight: 700;
+  color: #182028;
+}
+
+.our-time-line .photo {
+  /*photo in our-time-line*/
+  position: relative;
+}
+
+.our-time-line .photo img {
+  /*img in photo*/
+  width: 100%;
+}
+
+.our-time-line .photo .overflow {
+  /*overflow in photo*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 30px 40px;
+  background: #FF4800;
+  color: #fff;
+}
+
+/*end our-time-line*/
+/*start pricing*/
+.pricing {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.pricing h5 {
+  /*h5 in pricing*/
+  color: #FF4800;
+}
+
+.pricing h2 {
+  /*h2 in pricing*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.pricing .plan {
+  /*plan in pricing*/
+  padding: 20px;
+}
+
+.pricing .plan .head {
+  /*head in plan*/
+  background: #fff;
+  border: 1px solid #dddfdf;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+}
+
+.pricing .plan .head h3 {
+  /*h3 in head*/
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pricing .plan .body {
+  /*body in plan*/
+  border: 1px solid #dddfdf;
+  padding: 30px 15px;
+  background: #fff;
+}
+
+.pricing .plan .body p {
+  /*p in body*/
+  color: #7f7f7f;
+  margin: 20px;
+}
+
+.pricing .plan .body .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.pricing .plan .body .btn-custom:focus {
+  color: #fff;
+}
+
+.pricing .plan:hover {
+  /*when hover on plan*/
+  background: #182028;
+}
+
+.product .pro::before {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.product .pro, .pricing .plan {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end pricing*/
+/*start subscrib*/
+.subscrib {
+  margin: 100px 0 0;
+  padding: 50px 0 0;
+  background: url("../photo/backgrounds/1.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 341px;
+}
+
+.subscrib h5 {
+  /*h5 in subscrib*/
+  color: #fff;
+}
+
+.subscrib h2 {
+  /*h2 in subscrib*/
+  color: #FF4800;
+}
+
+.subscrib form {
+  /*form in subscrib*/
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .subscrib form {
+    /*xs*/
+    margin-top: 30px;
+  }
+}
+
+.subscrib form input {
+  /*input in form*/
+  color: #182028;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 24px 20px;
+  width: calc(100% - 220px) !important;
+}
+
+@media (max-width: 767px) {
+  .subscrib form input {
+    /*xs*/
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+}
+
+.subscrib form input::-webkit-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input:-ms-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input::-ms-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input::placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.subscrib form .btn-custom:focus {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .subscrib form .btn-custom {
+    /*xs*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*end subscrib*/

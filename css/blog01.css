@@ -1,0 +1,148 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*start blog*/
+.blog {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.blog h5 {
+  /*h5 in blog*/
+  color: #FF4800;
+}
+
+.blog h2 {
+  /*h2 in blog*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.blog .post {
+  /*post in blog*/
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(221, 223, 223, 0.5);
+          box-shadow: 0px 10px 20px 0px rgba(221, 223, 223, 0.5);
+  margin-bottom: 30px;
+}
+
+.blog .post .photo {
+  /*photo in post*/
+  position: relative;
+}
+
+.blog .post .photo img {
+  /*img in photo*/
+  width: 100%;
+}
+
+.blog .post .photo .date {
+  /*date in photo*/
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  background: #FF4800;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.blog .post .info {
+  /*info in post*/
+  padding: 35px 20px;
+}
+
+.blog .post .info h4 {
+  /*h4 in info*/
+  color: #182028;
+  margin-bottom: 15px;
+}
+
+.blog .post .info h4 a {
+  /*a in h4*/
+  font-size: 18px;
+}
+
+.blog .post .info p {
+  /*p in info*/
+  color: #7f7f7f;
+  margin: 20px 0;
+}
+
+.blog .post .info a {
+  /*a in info*/
+  color: #182028;
+  font-size: 12px;
+}
+
+.blog .post .info a:hover {
+  color: #FF4800;
+}
+
+.blog .more {
+  /*more in blog pages only*/
+  margin: 70px 0 100px;
+}
+
+.blog .more .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.blog .more .btn-custom:focus {
+  color: #fff;
+}
+
+.blog .more span.pages {
+  /*span in more in blog pages only*/
+  display: inline-block;
+  margin: 0 4px;
+  width: 40px;
+  height: 40px;
+  background: #FF4800;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.blog .more span.pages.active, .blog .more span.pages:hover {
+  /*span active,hover in more in blog pages only*/
+  background: #182028;
+}
+
+.blog .post .info a, .blog .more span.pages {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*end blog*/

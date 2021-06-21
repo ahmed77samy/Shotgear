@@ -1,0 +1,293 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*start contact*/
+.contact h5 {
+  /*h5 in contact*/
+  color: #FF4800;
+}
+
+.contact h2 {
+  /*h2 in contact*/
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.contact form.form .container {
+  /*container in form*/
+  padding: 0 250px;
+}
+
+@media (max-width: 767px) {
+  .contact form.form .container {
+    /*xs*/
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact form.form .container {
+    /*sm*/
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact form.form .container {
+    /*md*/
+    padding: 0 120px;
+  }
+}
+
+.contact form.form .form-group {
+  /*form-group in form*/
+  margin: 40px 0;
+}
+
+.contact form.form .form-group label {
+  /*label in form-group*/
+  color: #182028;
+  font-weight: normal;
+}
+
+.contact form.form .form-group .form-control {
+  /*form-control in form-group*/
+  color: #182028;
+  background: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: solid 1px #e8e8e8;
+  display: block;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+}
+
+.contact form.form .form-group .form-control:focus {
+  /*when focus on form-group*/
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05) !important;
+  border: solid 1px #FF4800;
+}
+
+.contact form.form .form-group textarea {
+  /*textarea in form-group*/
+  height: 150px !important;
+  resize: none;
+}
+
+.contact form.form .form-group .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.contact form.form .form-group .btn-custom:focus {
+  color: #fff;
+}
+
+.contact form.form .form-group .form-control, .studio-near-you .place::before {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.studio-near-you .place {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end contact*/
+/*start studio-near-you*/
+.studio-near-you {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.studio-near-you h5 {
+  /*h5 in studio-near-you*/
+  color: #FF4800;
+}
+
+.studio-near-you h2 {
+  /*h2 in studio-near-you*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.studio-near-you .place {
+  /*place in studio-near-you*/
+  padding: 40px 15px;
+  position: relative;
+  margin-bottom: 15px;
+  background: #fcf7f7;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 10px 35px 0px rgba(255, 255, 255, 0.5);
+}
+
+.studio-near-you .place::before {
+  /*before place in studio-near-you*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.studio-near-you .place h4 {
+  /*h4 in place*/
+  color: #182028;
+  margin-bottom: 30px;
+}
+
+.studio-near-you .place p {
+  /*p in place*/
+  color: #7f7f7f;
+  line-height: 30px;
+}
+
+.studio-near-you .place:hover {
+  /*when hover on place*/
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(24, 32, 40, 0.1);
+          box-shadow: 0px 10px 35px 0px rgba(24, 32, 40, 0.1);
+}
+
+.studio-near-you .place:hover::before {
+  /*when hover on place*/
+  left: 100%;
+}
+
+.contact form.form .form-group .form-control, .studio-near-you .place::before {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.studio-near-you .place {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end studio-near-you*/
+/*start subscrib*/
+.subscrib {
+  margin: 100px 0 0;
+  padding: 50px 0 0;
+  background: url("../photo/backgrounds/1.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 341px;
+}
+
+.subscrib h5 {
+  /*h5 in subscrib*/
+  color: #fff;
+}
+
+.subscrib h2 {
+  /*h2 in subscrib*/
+  color: #FF4800;
+}
+
+.subscrib form {
+  /*form in subscrib*/
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .subscrib form {
+    /*xs*/
+    margin-top: 30px;
+  }
+}
+
+.subscrib form input {
+  /*input in form*/
+  color: #182028;
+  font-size: 18px;
+  border-radius: 0;
+  padding: 24px 20px;
+  width: calc(100% - 220px) !important;
+}
+
+@media (max-width: 767px) {
+  .subscrib form input {
+    /*xs*/
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+}
+
+.subscrib form input::-webkit-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input:-ms-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input::-ms-input-placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form input::placeholder {
+  /*placeholder input in form*/
+  font-size: 14px;
+}
+
+.subscrib form .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.subscrib form .btn-custom:focus {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .subscrib form .btn-custom {
+    /*xs*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*end subscrib*/

@@ -1,0 +1,76 @@
+@import "../helpers/var";
+@import "../helpers/Mixin";
+/*start form*/
+form.form {
+    padding: 50px 0;
+    .container {
+        /*container in form*/
+        padding: 0 250px;
+        @include xs {
+            padding: 0 15px;
+        }
+        @include sm {
+            padding: 0 80px;
+        }
+        @include md {
+            padding: 0 120px;
+        }
+    }
+    .form-group {
+        /*form-group in form*/
+        margin: 40px 0;
+        label {
+            /*label in form-group*/
+            color: $bk;
+            font-weight: normal;
+        }
+        .form-control {
+            /*form-control in form-group*/
+            color: $bk;
+            background: #fff;
+            border-radius: 0;
+            box-shadow: none !important;
+            border: solid 1px #e8e8e8;
+            display: block;
+            height: 42px;
+            line-height: 40px;
+            outline: none;
+            padding-left: 18px;
+            padding-right: 30px;
+            @extend %transition3;
+            &:focus {
+                /*when focus on form-group*/
+                box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05) !important;
+                border: solid 1px $or;
+            }
+        }
+        .nice-select {
+            &.wide {
+                /*select in form-group*/
+                margin: 0 0 40px !important;
+                border-radius: 0;
+            }
+            &:active, &.open, &:focus {
+                /*select on active focus .open*/
+                border-color: $or;
+            }
+            .list {
+                /*list in nice-select*/
+                border-radius: 0;
+            }
+            .current {
+                /*list in nice-select*/
+                color: $wr2
+            }
+        }
+        .btn-custom {
+            /*btn-custom in form*/
+            color: $wh;
+            &:focus {
+                color: $wh;
+            }
+        }
+    }
+}
+@import "../helpers/extend";
+/*end form*/

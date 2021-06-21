@@ -1,0 +1,20 @@
+/*start slider*/
+.slider {
+    position: relative;
+    background: url("../photo/backgrounds/2.png") no-repeat center;
+    object-fit: cover;
+    height: 300px;
+    padding: 80px;
+    img {
+        /*img in slider*/
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    h2 {
+        /*h2 in slider*/
+        margin: 0;
+    }
+}
+/*end slider*/

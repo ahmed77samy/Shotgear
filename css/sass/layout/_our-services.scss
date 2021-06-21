@@ -1,0 +1,49 @@
+@import "../helpers/var";
+@import "../helpers/Mixin";
+/*start our-services*/
+.our-services {
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5 in our-services*/
+        color: $or;
+    }
+    h2 {
+        /*h2 in our-services*/
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .ser {
+        /*ser in our-services*/
+        overflow: hidden;
+        margin-bottom: 40px;
+        &.one,&.four {
+            /*ser one&four in our-services*/
+            height: 500px;
+            background: $ofwh;
+            padding: 100px 20px;
+            @include xs {
+                height: auto;
+            }
+            @include sm {
+                height: auto;
+            }
+            img {
+                /*img in ser one&four*/
+                margin-bottom: 40px;
+            }
+            h4 {
+                /*h4 in ser one&four*/
+                color: $bk;
+                margin-bottom: 40px;
+            }
+            p {
+                /*p in ser one&four*/
+                color: $wr1;
+                margin-bottom: 40px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+/*end our-services*/

@@ -1,0 +1,173 @@
+@import "../helpers/var";
+/*start recent-project*/
+.recent-project {
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5 in recent-project*/
+        color: $or;
+    }
+    h2 {
+        /*h2 in recent-project*/
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .tabs {
+        /*tabs in recent-project*/
+        margin-bottom: 40px;
+        span {
+            /*span in tabs*/
+            margin: 0 20px;
+            line-height: 50px;
+            a {
+                /*custom-anchor in tabs*/
+                color: $bk;
+                cursor: pointer;
+                &::before, &::after {
+                    /*before & after custom-anchor in tabs*/
+                    background: $or;
+                }
+                &:hover,&.active {
+                    /*hover & active custom-anchor in tabs*/
+                    color: $or
+                }
+            }
+        }
+    }    
+    .gallery {
+        .col-md-4,.col-md-6 {
+            /*grid in gallery for bootstrap*/
+            padding: 2px
+        }
+        .item {
+            /*item in gallery*/
+            overflow: hidden;
+            position: relative;
+            img {
+                /*img in item*/
+                width: 100%;
+                height: auto;
+            }
+            .over-lay {
+                /*over-lay in item*/
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: rgba($bk, .9);
+                padding: 40% 0;
+                @extend %transition3;
+                h4 {
+                    /*h4 in over-lay*/
+                    color: $lighter;
+                    @extend %transition3;
+                    &:hover {
+                        /*when hover on h4*/
+                        color: $or
+                    }
+                }
+                .zoom-in-out {
+                    /*zoom-in-out in over-lay*/
+                    position: absolute;
+                    left: 0;
+                    bottom: 40%;
+                    width: 100%;
+                    span {
+                        /*span in zoom-in-out*/
+                        cursor: pointer;
+                        font-size: 20px;
+                        margin: 0 10px;
+                        color: $wh;
+                        @extend %transition3;
+                        &.active,&:hover {
+                            /*span active,hover in zoom-in-out*/
+                            color: $or;
+                        }
+                    }
+                }
+            }
+            .cancel {
+                /*cancel in item*/
+                position: absolute;
+                bottom: 110%;
+                left: 50%;
+                transform: translateX(-50%);
+                @extend %transition3;
+                &:before {
+                    /*before cancel*/
+                    animation-play-state: paused;
+                }
+            }
+            &:hover {
+                /*when hover on item*/
+                .over-lay {
+                    left: 0
+                }
+            }
+            &.zin{
+                img {
+                    /*img when click on zoomin*/
+                    cursor: zoom-in;
+                }
+                .cancel {
+                    /*cancel when click on zoomin*/
+                    position: absolute;
+                    bottom: 50%;
+                    left: 50%;
+                    transform: translate(-50%,50%);
+                    &:before {
+                        /*before cancel when click on zoomin*/
+                        animation-play-state: running;
+                    }
+                    &:hover {
+                        &:before {
+                            /*before cancel when click on zoomin and hover on cancel*/
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+                &:hover {
+                    img {
+                        /*hover on img if click on zoomin*/
+                        transform: scale(2);
+                    }
+                    .over-lay {
+                        /*over-lay if click on zoomin*/
+                        left: -100%
+                    }
+                }
+            }
+        }
+    }
+    .more {
+        /*more in gallery pages only*/
+        margin: 70px 0 100px;
+        .btn-custom {
+            /*btn-custom in form*/
+            color: $wh;
+            &:focus {
+                color: $wh;
+            }
+        }
+        span.pages {
+            /*span in more in gallery pages only*/
+            display: inline-block;
+            margin: 0 4px;
+            width: 40px;
+            height: 40px;
+            background: $or;
+            color: $wh;
+            cursor: pointer;
+            text-align: center;
+            line-height: 40px;
+            @extend %transition3;
+            &.active,&:hover {
+                /*span active,hover in more in gallery pages only*/
+                background: $bk;
+            }
+        }
+    }
+}
+@import "../helpers/extend";
+/*end recent-project*/

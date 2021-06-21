@@ -1,0 +1,48 @@
+@import "../helpers/var";
+@import "../helpers/Mixin";
+/*start exceptional-services*/
+.exceptional-services {
+    padding: 100px 0 0;
+    background: $wh;
+    .text {
+        @include xs {
+            margin-bottom: 40px;
+        }
+        @include sm {
+            margin-bottom: 40px;
+        }
+        h5 {
+            /*h5 in text*/
+            color: $or;
+        }
+        h2 {
+            /*h2 in text*/
+            color: $bk;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+        p {
+            /*p in text*/
+            line-height: 28px;
+            margin-bottom: 40px;
+        }
+        .btn-custom {
+            /*btn-custom in form*/
+            color: $wh;
+            &:focus {
+                color: $wh;
+            }
+        }
+    }
+    .photo {
+        img {
+            @include xs {
+                width: 100%;
+            }
+            @include sm {
+                width: 100%;
+            }
+        }
+    }
+}
+/*end exceptional-services*/

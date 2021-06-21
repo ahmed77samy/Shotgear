@@ -1,0 +1,311 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+.radix {
+  /*start blog*/
+  /*end blog*/
+  /*start aside*/
+  /*end aside*/
+}
+
+.radix .blog {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.radix .blog h5 {
+  /*h5 in blog*/
+  color: #FF4800;
+}
+
+.radix .blog h2 {
+  /*h2 in blog*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.radix .blog .post {
+  /*post in blog*/
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(221, 223, 223, 0.5);
+          box-shadow: 0px 10px 20px 0px rgba(221, 223, 223, 0.5);
+  margin-bottom: 30px;
+}
+
+.radix .blog .post .photo {
+  /*photo in post*/
+  position: relative;
+}
+
+.radix .blog .post .photo img {
+  /*img in photo*/
+  width: 100%;
+}
+
+.radix .blog .post .photo .date {
+  /*date in photo*/
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  background: #FF4800;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.radix .blog .post .info {
+  /*info in post*/
+  padding: 35px 20px;
+}
+
+.radix .blog .post .info h4 {
+  /*h4 in info*/
+  color: #182028;
+  margin-bottom: 15px;
+}
+
+.radix .blog .post .info h4 a {
+  /*a in h4*/
+  font-size: 18px;
+}
+
+.radix .blog .post .info p {
+  /*p in info*/
+  color: #7f7f7f;
+  margin: 20px 0;
+}
+
+.radix .blog .post .info a {
+  /*a in info*/
+  color: #182028;
+  font-size: 12px;
+}
+
+.radix .blog .post .info a:hover {
+  color: #FF4800;
+}
+
+.radix .blog .more {
+  /*more in blog pages only*/
+  margin: 70px 0 100px;
+}
+
+.radix .blog .more .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.radix .blog .more .btn-custom:focus {
+  color: #fff;
+}
+
+.radix .blog .more span.pages {
+  /*span in more in blog pages only*/
+  display: inline-block;
+  margin: 0 4px;
+  width: 40px;
+  height: 40px;
+  background: #FF4800;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+
+.radix .blog .more span.pages.active, .radix .blog .more span.pages:hover {
+  /*span active,hover in more in blog pages only*/
+  background: #182028;
+}
+
+.radix .blog .post .info a, .radix .blog .more span.pages, .radix aside section .body .post h5, .radix aside section.section-two .body h5, .radix aside section.section-three .body h5 {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.radix aside {
+  margin: 100px 0 0;
+}
+
+.radix aside form.search {
+  /*form.search in aside*/
+  background: #F4F4F4;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.radix aside form.search .form-control {
+  /*form-control in form.search*/
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  color: #182028;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-transform: capitalize;
+  cursor: unset;
+}
+
+.radix aside form.search .form-control::-webkit-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control:-ms-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control::-ms-input-placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control::placeholder {
+  /*placeholder form-control*/
+  color: #7f7f7f;
+  font-size: 13px;
+}
+
+.radix aside form.search .form-control:focus {
+  /*focus form-control*/
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.radix aside section {
+  /*section in aside*/
+  border: 2px solid #F4F4F4;
+  background: #F4F4F4;
+  margin: 0 0 40px;
+}
+
+.radix aside section .header {
+  /*header in section*/
+  background: #fff;
+  color: #182028;
+  padding: 10px 40px;
+}
+
+.radix aside section .body {
+  /*body in section*/
+  padding: 10px 40px;
+}
+
+.radix aside section .body .post {
+  /*post in body*/
+  overflow: hidden;
+  padding: 25px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.radix aside section .body .post.three {
+  /*post-three in body*/
+  border: none;
+}
+
+.radix aside section .body .post img {
+  /*img in post*/
+  float: left;
+  margin-right: 12px;
+}
+
+.radix aside section .body .post h5 {
+  /*h5 in post*/
+  color: #182028;
+  display: inline-block;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.radix aside section .body .post h5:hover {
+  /*when hover on h5 in post*/
+  color: #FF4800;
+}
+
+.radix aside section .body .post p {
+  /*h5 in post*/
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.radix aside section.section-two {
+  /*section-two in aside*/
+}
+
+.radix aside section.section-two .body h5 {
+  /*h5 in section-two*/
+  margin: 35px 0;
+  color: #182028;
+}
+
+.radix aside section.section-two .body h5:hover {
+  /*when hover on h5 in section-two*/
+  color: #FF4800;
+}
+
+.radix aside section.section-three .body {
+  /*body in section-three in aside*/
+  padding: 40px;
+}
+
+.radix aside section.section-three .body h5 {
+  /*h5 in section-three*/
+  color: #182028;
+  display: inline;
+  line-height: 35px;
+}
+
+.radix aside section.section-three .body h5:hover {
+  /*when hover on h5 in section-three*/
+  color: #FF4800;
+}
+
+.radix aside section.section-four .body {
+  /*body in section-four in aside*/
+  padding: 40px;
+  text-align: center;
+}
+
+.radix aside section.section-four .body img {
+  /*im in section-four*/
+  margin-bottom: 5px;
+}
+
+.radix .blog .post .info a, .radix .blog .more span.pages, .radix aside section .body .post h5, .radix aside section.section-two .body h5, .radix aside section.section-three .body h5 {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}

@@ -1,0 +1,59 @@
+@import "../helpers/var";
+.tags {
+    span {
+        /*span in tags in radix*/
+        color: $bk;
+        a {
+            /*a in span*/
+            color: $wr2;
+            @extend %transition3;
+            &:hover {
+                /*when hover on a*/
+                color: $or;
+            }
+        }
+    }
+    section {
+        /*section in tags*/
+        background: $offwh;
+        margin-top: 40px;
+        overflow: hidden;
+        padding: 45px;
+        img {
+            /*img in section*/
+            padding-right: 40px;
+        }
+        .info {
+            h3 {
+                /*h3 in info in section*/
+                margin-bottom: 25px;
+                a {
+                    /*a in h3*/
+                    color: $bk;
+                    @extend %transition3;
+                    &:hover {
+                        /*when hover in a*/
+                        color: $or
+                    }
+                }
+            }
+            p {
+                /*p in info in section*/
+                color: $wr2;
+                margin-bottom: 15px;
+            }
+            a.link {
+                /*a.link in info in section*/
+                color: $or;
+                font-size: 12px;
+                text-decoration: underline;
+                @extend %transition3;
+                &:hover {
+                    /*when hover on a.link*/
+                    color: $bk
+                }
+            }
+        }
+    }
+}
+@import "../helpers/extend";

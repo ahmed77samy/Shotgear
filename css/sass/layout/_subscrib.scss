@@ -1,0 +1,54 @@
+@import "../helpers/var";
+@import "../helpers/Mixin";
+/*start subscrib*/
+.subscrib {
+    margin: 100px 0 0;
+    padding: 50px 0 0;
+    background: url("../photo/backgrounds/1.png") no-repeat center;
+    object-fit: cover;
+    height: 341px;
+    h5 {
+        /*h5 in subscrib*/
+        color: $wh;
+    }
+    h2 {
+        /*h2 in subscrib*/
+        color: $or
+    }
+    form {
+        /*form in subscrib*/
+        margin-top: 60px;
+        @include xs {
+            margin-top: 30px;
+        }
+        input {
+            /*input in form*/
+            color: $bk;
+            font-size: 18px;
+            border-radius: 0;
+            padding: 24px 20px;
+            width: calc(100% - 220px) !important;
+            @include xs {
+                width: 100% !important;
+                margin-bottom: 30px;
+            }
+            &::placeholder {
+                /*placeholder input in form*/
+                font-size: 14px;
+            }
+        }
+        .btn-custom {
+            /*btn-custom in form*/
+            color: $wh;
+            &:focus {
+                color: $wh;
+            }
+            @include xs {
+                display: block;
+                margin-left: auto;
+                margin-right: auto
+            }
+        }
+    }
+}
+/*end subscrib*/

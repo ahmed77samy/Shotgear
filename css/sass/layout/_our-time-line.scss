@@ -1,0 +1,77 @@
+@import "../helpers/var";
+/*start our-time-line*/
+.our-time-line {
+    padding: 100px 0 0;
+    background: $wh;
+    .text {
+        h5 {
+            /*h5 in text in our-time-line*/
+            color: $or
+        }
+        h2 {
+            /*h2 in text in our-time-line*/
+            margin-bottom: 60px;
+            font-weight: 700;
+        }
+        .count {
+            /*count in text*/
+            overflow: hidden;
+            position: relative;
+            .time {
+                /*before time in count*/
+                text-align: center;
+                padding: 15px;
+                background: $or;
+                color: $wh;
+                width: 50px;
+                &::before {
+                    /*before time in count*/
+                    content: "";
+                    position: absolute;
+                    bottom: 5px;
+                    left: 22.5px;
+                    width: 2px;
+                    height: calc(100% - 60px);
+                    background: $or;
+                }
+                &.three-time {
+                    &::before {
+                        /*before three-time in count*/
+                        display: none;
+                    }
+                }
+            }
+            .labell {
+                /*labell in text*/
+                width: calc(100% - 50px);
+                padding: 0 15px;
+                margin-bottom: 40px;
+                color: $wr2;
+                h4 {
+                    /*h4 in labell*/
+                    margin: 15px 0;
+                    font-weight: 700;
+                    color: $bk
+                }
+            }
+        }            
+    }
+    .photo {
+        /*photo in our-time-line*/
+        position: relative;
+        img {
+            /*img in photo*/
+            width: 100%;
+        }
+        .overflow {
+            /*overflow in photo*/
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 30px 40px;
+            background: $or;
+            color: $wh;
+        }
+    }
+}
+/*end our-time-line*/

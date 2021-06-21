@@ -1,0 +1,348 @@
+<!--
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GALLERY 01-SHOTGEAR</title>
+    <link rel="shortcut icon" href="../photo/logo/favicon.png">
+    <link rel="stylesheet" href="../css/normaliz.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontello.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/gallery01.css">
+</head>
+<body>
+    <div class="loading"><!--loading-->
+        <div class="loader loader10"><!--loader--></div>
+    </div><!--loading-->
+
+    <div class="to-up text-center"><!--to-up-->
+        <i class="demo-icon icon-up-big">&#xe840;</i><!--icon-->
+    </div><!--to-up-->
+
+    <header><!--header-->
+        <nav><!--nav-->
+            <div class="container-fluid"><!--container-->
+                <div class="row"><!--row-->
+                    <div class="col-md-2 col-xs-4 pull-left"><!--first grid-->
+                        <div class="logo"><!--logo-->
+                            <img src="../photo/logo/logo.png" alt="LOGO"><!--img-->
+                        </div><!--logo-->
+                    </div><!--first grid-->
+                    <div class="col-md-8 hidden-sm hidden-xs" style="padding-left: 30px;padding-right:0;"><!--second grid-->
+                        <div class="ul"><!--ul-->
+                            <ul class="list-unstyled text-uppercase text-center"><!--ul-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="../index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="../index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="about.html" class="anc custom-a">about</a></li>
+                                <li><a href="services.html" class="anc custom-a">services</a></li>
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--ul-->
+                    </div><!--second grid-->
+                    <div class="col-md-2 col-xs-4 pull-right"><!--third grid-->
+                        <div class="menu-search pull-right"><!--menu-search-->
+                            <i class="demo-icon icon-search search"><!--icon-->&#xe802;</i>
+                            <i class="demo-icon icon-list-bullet menu"><!--icon-->&#xf0ca;</i>
+                        </div><!--menu-search-->
+                    </div><!--third grid-->
+                    <div class="fixed-search"><!--fixed-search-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="container"><!--container-->
+                                <div class="cancel center-block text-center"><!--cancel-->
+                                    <a href="#" class="anc"><i class="demo-icon icon-cancel">&#xe80c;</i></a>
+                                </div><!--cancel-->
+                                <form action="#"><!--form-->
+                                    <input type="text" id="search" class="btn" placeholder="SEARCH HERE"><!--input-->
+                                    <i class="demo-icon icon-search pull-right">&#xe802;</i><!--icon-->
+                                </form><!--form-->
+                            </div><!--container-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-search-->
+                    <div class="fixed-menu"><!--fixed-menu-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="cancel center-block text-center"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                            <ul class="list-unstyled text-uppercase text-center ul"><!--ul-->
+                                <li class="drop" data-drop=".one"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down one"><!--drop-down-->
+                                        <li><a href="../index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="../index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="about.html" class="anc custom-a">about</a></li>
+                                <li><a href="services.html" class="anc custom-a">services</a></li>
+                                <li class="drop" data-drop=".two"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down two"><!--drop-down-->
+                                        <li><a href="gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop" data-drop=".three"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down three"><!--drop-down-->
+                                        <li><a href="blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-menu-->
+                </div><!--row-->
+            </div><!--container-->
+        </nav><!--nav-->
+    </header><!--header-->
+
+    <div class="slider"><!--slider-->
+        <img src="../photo/backgrounds/3.png" alt="slider wave"><!--img-->
+        <h5 class="text-center text-uppercase">GALLERY - home</h5>
+        <h2 class="text-center text-uppercase lighter"><!--h2-->GALLERY</h2>
+    </div><!--slider-->
+
+    <div class="recent-project"><!--recent-project-->
+        <div class="container-fluid"><!--container-fluid-->
+            <h5 class="text-center text-uppercase"><!--h5-->RECENT PROJECT</h5>
+            <h2 class="text-center text-uppercase lighter"><!--h2-->CHECK LATEST WORK</h2>
+            <div class="tabs text-center"><!--tabs-->
+                <span class="text-uppercase"><!--span--><a class="anc custom-a active" data-show=".all">ALL PHOTOS</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".weeding">WEEDING</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".fashion">FASHION</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".portrait">PORTRAIT</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".magazine">MAGAZINE</a></span>
+            </div><!--tabs-->
+            <div class="gallery"><!--gallery-->
+                <div class="row"><!--row-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all weeding fashion"><!--first grid-->
+                        <div class="item one"><!--item 1-->
+                            <img src="../photo/gallery/1.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".one"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".one"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 1-->
+                    </div><!--first grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all portrait magazine"><!--second grid-->
+                        <div class="item two"><!--item 2-->
+                            <img src="../photo/gallery/2.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".two"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".two"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 2-->
+                    </div><!--second grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all portrait fashion"><!--third grid-->
+                        <div class="item three"><!--item 3-->
+                            <img src="../photo/gallery/3.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".three"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".three"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 3-->
+                    </div><!--third grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all magazine weeding"><!--fourty grid-->
+                        <div class="item four"><!--item 4-->
+                            <img src="../photo/gallery/4.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".four"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".four"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 4-->
+                    </div><!--fourty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all weeding magazine"><!--fivty grid-->
+                        <div class="item five"><!--item 5-->
+                            <img src="../photo/gallery/5.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".five"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".five"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 5-->
+                    </div><!--fivty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all fashion portrait"><!--sixty grid-->
+                        <div class="item six"><!--item 6-->
+                            <img src="../photo/gallery/6.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".six"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".six"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 6-->
+                    </div><!--sixty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all fashion portrait weeding magazine"><!--seventy grid-->
+                        <div class="item seven"><!--item 7-->
+                            <img src="../photo/gallery/7.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".seven"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".seven"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 7-->
+                    </div><!--seven grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all fashion portrait weeding magazine"><!--eighty grid-->
+                        <div class="item eight"><!--item 8-->
+                            <img src="../photo/gallery/8.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".eight"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".eight"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 8-->
+                    </div><!--eighty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all fashion portrait weeding magazine"><!--ninty grid-->
+                        <div class="item nine"><!--item 9-->
+                            <img src="../photo/gallery/9.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".nine"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".nine"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 9-->
+                    </div><!--ninty grid-->
+                </div><!--row-->
+            </div><!--gallery-->
+            <div class="more text-center"><!--more-->
+                <a href="#" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                    <span></span>
+                    <span></span>
+                    load more
+                </a><!--btn-custom-->
+            </div><!--more-->
+        </div><!--container-fluid-->
+    </div><!--recent-project-->
+
+    <footer><!--footer-->
+        <div class="container"><!--container-->
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-xs-12"><!--first grid-->
+                    <div class="services-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->OUR SERVICE</h3>
+                        <p><a href="#" class="anc">Car accident</a></p><!--p-->
+                        <p><a href="#" class="anc">Personal injury</a></p><!--p-->
+                        <p><a href="#" class="anc">Family law</a></p><!--p-->
+                        <p><a href="#" class="anc">Bank and financial</a></p><!--p-->
+                        <p><a href="#" class="anc">Capital market</a></p><!--p-->
+                        <p><a href="#" class="anc">Employment Law</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--first grid-->
+                <div class="col-md-4 col-xs-12"><!--second grid-->
+                    <div class="contact-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->CONTACT INFO</h3>
+                        <p>4361 Morningview Lane Artland , Pall Street Latimer, IA 50452 / 23654</p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-phone">&#xe82a;</i> +02 - 123 456 789</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-mail">&#xe803;</i> shotgear@mail.com</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-briefcase">&#xe84d;</i> shotgearfirm.inc</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-xs-12"><!--third grid-->
+                    <div class="instgram-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->INSTAGRAM</h3>
+                        <a href="#"><img src="../photo/footer/1.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/2.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/3.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/4.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/5.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/6.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/7.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="../photo/footer/8.png" alt="INSTAGRAM"></a><!--img-->
+                    </div><!--foot-->
+                </div><!--third grid-->
+            </div><!--row-->
+            <div class="share text-center"><!--share-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-facebook">&#xf09a;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-twitter">&#xf099;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-google">&#xf1a0;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-instagram">&#xf16d;</i></a></span><!--span social-->
+            </div><!--share-->
+        </div><!--container-->
+        <div class="copy-right text-center"><!--copy-right-->
+            <p><!--p-->Copyright<i class="demo-icon icon-copyright">&#xf1f9;</i>2020 All rights reserved | This template is made with <i class="demo-icon icon-heart-empty">&#xe805;</i> by <span>shotgear</span></p>
+        </div><!--copy-right-->
+    </footer><!--footer-->
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/gallery01.js"></script>
+</body>
+</html>

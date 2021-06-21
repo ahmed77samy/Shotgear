@@ -1,0 +1,34 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start reset*/
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+    outline-offset: 0;
+    color: inherit
+}
+
+.btn:active {
+    box-shadow: inherit;
+}
+
+.btn:focus, .btn:hover {
+    color: inherit
+}
+
+a.anc,
+a.anc:focus,
+a.anc:hover {
+    color: inherit;
+    text-decoration: none;
+    outline: none
+}
+/*end reset*/

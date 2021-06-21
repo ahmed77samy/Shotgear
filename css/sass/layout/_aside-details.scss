@@ -1,0 +1,27 @@
+@import "../helpers/var";
+aside {
+    h3 {
+        /*h3 in aside in radix*/
+        font-size: 30px;
+        color: $bk;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    h5 {
+        /*h5 in aside in radix*/
+        color: $bk
+    }
+    p {
+        /*p in aside in radix*/
+        color: $wr2;
+        a {
+            /*a in p*/
+            color: $wr2;
+            @extend %transition3;
+            &:hover {
+                /*when hover on a in p*/
+                color: $or
+            }
+        }
+    }
+}

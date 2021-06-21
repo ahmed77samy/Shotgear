@@ -1,0 +1,84 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+@import "helpers/var";
+/*start footer*/
+footer {
+    padding: 100px 0 0;
+    background: $bk2;
+    color: $wr1;
+    .foot {
+        /*foot in footer*/
+        margin-bottom: 40px;
+        h3 {
+            /*h3 in foot*/
+            color: $wh;
+            margin: 0 0 40px;
+        }
+        p {
+            a {
+                /*a in p*/
+                color: $wr1;
+                @extend %transition3;
+                &:hover {
+                    color: $or;
+                }
+            }
+        }
+        &.contact-foot {
+            p {
+                /*p in contact-foot*/
+                margin-bottom: 20px;
+                &:first-of-type {
+                    /*first p in contact-foot*/
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        &.instgram-foot {
+            text-align: center;
+            h3 {
+                text-align: left;
+            }
+            img {
+                /*img in instgram-foott*/
+                // display: inline-block;
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .share {
+        /*share in footer*/
+        margin: 60px 0 40px;
+        span {
+            .demo-icon {
+                /*demo-icon in share*/
+                font-size: 20px;
+                margin: 0 15px;
+                @extend %transition3;
+                &:hover {
+                    /*when hover on demo-icon in share*/
+                    color: $or
+                }
+            }
+        }
+    }
+    .copy-right {
+        /*copy-right in footer*/
+        background: $gray;
+        padding: 30px 0;
+        p {
+            /*p in copy-right*/
+            margin: 0;
+            span,.demo-icon:last-of-type {
+                /*span , demo-icon in p in copy-right*/
+                color: $or;
+            }
+        }
+    }
+}
+@import "helpers/extend";
+/*end footer*/

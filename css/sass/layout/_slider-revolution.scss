@@ -1,0 +1,86 @@
+@import "../helpers/var";
+/*start tp-bannercontainer*/
+.tp-bannercontainer {
+    /*bannercontainer*/
+    width: 100%;
+	height: 100vh;
+	position: relative;
+    overflow: hidden;
+    .tparrows {
+        /*tparrow in bannercontainer*/
+        background: none !important;
+        &.hidearrows {
+            /*hidearrows*/
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+            -moz-opacity: 1;
+            -khtml-opacity: 1;
+            opacity: 1;
+        }
+        &.tp-leftarrow,
+        &.tp-rightarrow 
+        /*leftarrow & rightarrow in tparrows*/{
+            background:none;
+            width: 70px !important;
+            height: 70px !important;
+            &:hover {
+                /*when do hover on leftarrow & rightarrow*/
+                background-position:unset;
+            }
+        }
+        .demo-icon {
+            /*demo-icon in arrow*/
+            line-height: 70px;
+            display: block;
+            margin: auto;
+            background: $wh-opacity-3;
+            color:  $wh !important;
+            font-weight: bolder;
+            width: 70px !important;
+            height: 70px !important;
+        }
+    }
+    .tp-banner {
+        /*tp-banner in bannercontainer*/
+        width: 100%;
+        position: relative;
+        ul {
+            li {
+                img {
+                    /*img in grid*/
+                    width: 100%;
+                }
+                .tp-caption {
+                    /*tp-caption in grid*/
+                    &.finewide_small_white {
+                        /*caption finewide_small_white in grid*/
+                        font-size: 22px;
+                        line-height: 20px;
+                        font-family: inherit;
+                        letter-spacing: 5px;
+                    }
+                    &.boldwide_medium_white {
+                        /*caption boldwide_medium_white  in grid*/
+                        font-size: 44px;
+                        line-height: 40px;
+                        font-weight: 600;
+                        font-family: inherit;
+                        color: $wh;
+                        text-decoration: none;
+                        background-color: transparent;
+                        text-shadow: none;
+                        text-transform: uppercase;
+                        letter-spacing: 5px;
+                        border-width: 0px;
+                        border-color: $bk;
+                        border-style: none;
+                    }
+                    span {
+                        /*span in caption*/
+                        color: $or
+                    }
+                }
+            }
+        }
+    }
+}
+/*end tp-bannercontainer*/

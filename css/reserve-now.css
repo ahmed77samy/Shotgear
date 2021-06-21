@@ -1,0 +1,214 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start slider*/
+.slider {
+  position: relative;
+  background: url("../photo/backgrounds/2.png") no-repeat center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  padding: 80px;
+}
+
+.slider img {
+  /*img in slider*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.slider h2 {
+  /*h2 in slider*/
+  margin: 0;
+}
+
+/*end slider*/
+/*start pricing*/
+.pricing {
+  padding: 100px 0 0;
+  background: #fff;
+}
+
+.pricing h5 {
+  /*h5 in pricing*/
+  color: #FF4800;
+}
+
+.pricing h2 {
+  /*h2 in pricing*/
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.pricing .plan {
+  /*plan in pricing*/
+  padding: 20px;
+}
+
+.pricing .plan .head {
+  /*head in plan*/
+  background: #fff;
+  border: 1px solid #dddfdf;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+}
+
+.pricing .plan .head h3 {
+  /*h3 in head*/
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.pricing .plan .body {
+  /*body in plan*/
+  border: 1px solid #dddfdf;
+  padding: 30px 15px;
+  background: #fff;
+}
+
+.pricing .plan .body p {
+  /*p in body*/
+  color: #7f7f7f;
+  margin: 20px;
+}
+
+.pricing .plan .body .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+.pricing .plan .body .btn-custom:focus {
+  color: #fff;
+}
+
+.pricing .plan:hover {
+  /*when hover on plan*/
+  background: #182028;
+}
+
+form.form .form-group .form-control {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.pricing .plan {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end pricing*/
+/*start form*/
+form.form {
+  padding: 50px 0;
+}
+
+form.form .container {
+  /*container in form*/
+  padding: 0 250px;
+}
+
+@media (max-width: 767px) {
+  form.form .container {
+    /*xs*/
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  form.form .container {
+    /*sm*/
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  form.form .container {
+    /*md*/
+    padding: 0 120px;
+  }
+}
+
+form.form .form-group {
+  /*form-group in form*/
+  margin: 40px 0;
+}
+
+form.form .form-group label {
+  /*label in form-group*/
+  color: #182028;
+  font-weight: normal;
+}
+
+form.form .form-group .form-control {
+  /*form-control in form-group*/
+  color: #182028;
+  background: #fff;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: solid 1px #e8e8e8;
+  display: block;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+}
+
+form.form .form-group .form-control:focus {
+  /*when focus on form-group*/
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.05) !important;
+  border: solid 1px #FF4800;
+}
+
+form.form .form-group .nice-select.wide {
+  /*select in form-group*/
+  margin: 0 0 40px !important;
+  border-radius: 0;
+}
+
+form.form .form-group .nice-select:active, form.form .form-group .nice-select.open, form.form .form-group .nice-select:focus {
+  /*select on active focus .open*/
+  border-color: #FF4800;
+}
+
+form.form .form-group .nice-select .list {
+  /*list in nice-select*/
+  border-radius: 0;
+}
+
+form.form .form-group .nice-select .current {
+  /*list in nice-select*/
+  color: #7f7f7f;
+}
+
+form.form .form-group .btn-custom {
+  /*btn-custom in form*/
+  color: #fff;
+}
+
+form.form .form-group .btn-custom:focus {
+  color: #fff;
+}
+
+form.form .form-group .form-control {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.pricing .plan {
+  /*transition .5s*/
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*end form*/

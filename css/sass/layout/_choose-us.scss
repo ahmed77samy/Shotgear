@@ -1,0 +1,79 @@
+@import "../helpers/var";
+/*start choose-us*/
+.choose-us {
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5 in choose-us*/
+        color: $or;
+    }
+    h2 {
+        /*h2 in choose-us*/
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .tabs {
+        .item {
+            /*item in tabs*/
+            background: $ofwh;
+            color: $bk;
+            // cursor: pointer;
+            padding: 25px 0;
+            h4 {
+                /*h4 in item*/
+                font-size: 14px;
+                a {
+                    cursor: pointer;
+                    &::after,&::before {
+                        /*after & before custom-anchor*/
+                        background: $or;
+                    }
+                    &:hover,&.active {
+                        /*hover on custom-anchor*/
+                        color: $or;
+                    }
+                }
+            }
+        }
+    }
+    .parent {
+        /*parent in choose-us*/
+        margin-top: 60px;
+        .child {
+            /*child in parent*/
+            display: none;
+            .text {
+                /*text in child*/
+                color: $wr2;
+                @include xs {
+                    margin-bottom: 30px;
+                }
+                @include sm {
+                    margin-bottom: 30px;
+                }
+                p {
+                    &:first-of-type {
+                        /*first p in text*/
+                        line-height: 30px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+            .photo {
+                /*photo in child*/
+                overflow: hidden;
+                img {
+                    @include xs {
+                        width: 100%;
+                    }
+                    @include sm {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@import "../helpers/extend";
+/*end choose-us*/
+

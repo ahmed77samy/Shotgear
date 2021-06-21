@@ -1,0 +1,56 @@
+@import "../helpers/var";
+/*start pricing*/
+.pricing {
+    padding: 100px 0 0;
+    background: $wh;
+    h5 {
+        /*h5 in pricing*/
+        color: $or
+    }
+    h2 {
+        /*h2 in pricing*/
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+    .plan {
+        /*plan in pricing*/
+        padding: 20px;
+        @extend %transition5;
+        .head {
+            /*head in plan*/
+            background: $wh;
+            border: 1px solid $lighter;
+            padding: 30px 15px;
+            margin-bottom: 30px;
+            h3 {
+                /*h3 in head*/
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+        .body {
+            /*body in plan*/
+            border: 1px solid $lighter;
+            padding: 30px 15px;
+            background: $wh;
+            p {
+                /*p in body*/
+                color: $wr2;
+                margin: 20px;
+            }
+            .btn-custom {
+                /*btn-custom in form*/
+                color: $wh;
+                &:focus {
+                    color: $wh;
+                }
+            }
+        }
+        &:hover {
+            /*when hover on plan*/
+            background: $bk;
+        }
+    }
+}
+@import "../helpers/extend";
+/*end pricing*/

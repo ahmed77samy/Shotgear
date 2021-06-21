@@ -1,0 +1,916 @@
+<!--
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SHOTGEAR</title>
+    <link rel="shortcut icon" href="photo/logo/favicon.png">
+    <link rel="stylesheet" href="css/normaliz.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.min.css">
+    <link rel="stylesheet" href="css/settings.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading"><!--loading-->
+        <div class="loader loader10"><!--loader--></div>
+    </div><!--loading-->
+
+    <div class="to-up text-center"><!--to-up-->
+        <i class="demo-icon icon-up-big">&#xe840;</i><!--icon-->
+    </div><!--to-up-->
+
+    <header><!--header-->
+        <nav><!--nav-->
+            <div class="container-fluid"><!--container-->
+                <div class="row"><!--row-->
+                    <div class="col-md-2 col-xs-4 pull-left"><!--first grid-->
+                        <div class="logo"><!--logo-->
+                            <img src="photo/logo/logo.png" alt="LOGO"><!--img-->
+                        </div><!--logo-->
+                    </div><!--first grid-->
+                    <div class="col-md-8 hidden-sm hidden-xs" style="padding-left: 30px;padding-right:0;"><!--second grid-->
+                        <div class="ul"><!--ul-->
+                            <ul class="list-unstyled text-uppercase text-center"><!--ul-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/about.html" class="anc custom-a">about</a></li>
+                                <li><a href="pages/services.html" class="anc custom-a">services</a></li>
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="pages/gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="pages/gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="pages/gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down"><!--drop-down-->
+                                        <li><a href="pages/blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="pages/blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="pages/blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="pages/contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--ul-->
+                    </div><!--second grid-->
+                    <div class="col-md-2 col-xs-4 pull-right"><!--third grid-->
+                        <div class="menu-search pull-right"><!--menu-search-->
+                            <i class="demo-icon icon-search search"><!--icon-->&#xe802;</i>
+                            <i class="demo-icon icon-list-bullet menu"><!--icon-->&#xf0ca;</i>
+                        </div><!--menu-search-->
+                    </div><!--third grid-->
+                    <div class="fixed-search"><!--fixed-search-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="container"><!--container-->
+                                <div class="cancel center-block text-center"><!--cancel-->
+                                    <a href="#" class="anc"><i class="demo-icon icon-cancel">&#xe80c;</i></a>
+                                </div><!--cancel-->
+                                <form action="#"><!--form-->
+                                    <input type="text" id="search" class="btn" placeholder="SEARCH HERE"><!--input-->
+                                    <i class="demo-icon icon-search pull-right">&#xe802;</i><!--icon-->
+                                </form><!--form-->
+                            </div><!--container-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-search-->
+                    <div class="fixed-menu"><!--fixed-menu-->
+                        <div class="over-lay"><!--over-lay-->
+                            <div class="cancel center-block text-center"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                            <ul class="list-unstyled text-uppercase text-center ul"><!--ul-->
+                                <li class="drop" data-drop=".one"><!--drop-->
+                                    <a class="anc custom-a">home<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down one"><!--drop-down-->
+                                        <li><a href="index.html" class="anc custom-a">home"01</a></li>
+                                        <li><a href="index2.html" class="anc custom-a">home"02</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/about.html" class="anc custom-a">about</a></li>
+                                <li><a href="pages/services.html" class="anc custom-a">services</a></li>
+                                <li class="drop" data-drop=".two"><!--drop-->
+                                    <a class="anc custom-a">gallery<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down two"><!--drop-down-->
+                                        <li><a href="pages/gallery01.html" class="anc custom-a">gallery"01</a></li>
+                                        <li><a href="pages/gallery02.html" class="anc custom-a">gallery"02</a></li>
+                                        <li><a href="pages/gallery-details.html" class="anc custom-a">gallery"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li class="drop" data-drop=".three"><!--drop-->
+                                    <a class="anc custom-a">blog<i class="demo-icon icon-down-dir">&#xe83c;</i></a>
+                                    <ul class="drop-down three"><!--drop-down-->
+                                        <li><a href="pages/blog01.html" class="anc custom-a">blog"01</a></li>
+                                        <li><a href="pages/blog02.html" class="anc custom-a">blog"02</a></li>
+                                        <li><a href="pages/blog-details.html" class="anc custom-a">blog"details</a></li>
+                                    </ul><!--drop-down-->
+                                </li><!--drop-->
+                                <li><a href="pages/reserve-now.html" class="anc custom-a">reserve now</a></li>
+                                <li><a href="pages/contact.html" class="anc custom-a">contact</a></li>
+                            </ul><!--ul-->
+                        </div><!--over-lay-->
+                    </div><!--fixed-menu-->
+                </div><!--row-->
+            </div><!--container-->
+        </nav><!--nav-->
+    </header><!--header-->
+
+    <div class="tp-bannercontainer"><!--tp-bannercontainer-->
+        <div class="tp-leftarrow tparrows default hidearrows"><!--tparrows-->
+            <i class="demo-icon icon-left-open">&#xe837;</i><!--icon-->
+        </div><!--tparrows-->
+        <div class="tp-rightarrow tparrows default hidearrows"><!--tparrows-->
+            <i class="demo-icon icon-right-open">&#xe836;</i><!--icon-->
+        </div><!--tparrows-->
+        <div class="tp-banner" id="tp-banner"><!--tp-banner-->
+            <ul class="list-unstyled"><!--ul-->
+                <!--grid 1-->
+                <li 
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner1.png" 
+                    alt="BANNER 1"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 1-->
+                <!--grid 2-->
+                <li 
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner3.png" 
+                    alt="BANNER 2"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 2-->
+                <!--grid 3-->
+                <li
+                data-transition="random-premium"
+                data-slotamout="7"
+                data-masterspeed="1500"
+                >
+                    <img 
+                    src="photo/banner/banner5.png" 
+                    alt="BANNER 3"><!--img-->
+                    <!--caption 1-->
+                    <div class="tp-caption text-uppercase finewide_small_white lft stt"
+                    data-x="550"
+                    data-y="230"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >MODEL PHOTOGRAPHY
+                    </div><!--caption 1-->
+                    <!--caption 2-->
+                    <div class="tp-caption text-uppercase boldwide_medium_white sfb stb"
+                    data-x="500"
+                    data-y="265"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >CREAT<span>IVE STU</span>DIO
+                    </div><!--caption 2-->
+                    <!--caption 3-->
+                    <div class="tp-caption text-uppercase finewide_small_white sfb stb"
+                    data-x="540"
+                    data-y="320"
+                    data-start="2500"
+                    data-speed="500"
+                    data-easing="Power2.easeIn"
+                    data-end="50000"
+                    data-endspeed="200"
+                    data-endeasing="Power1.easeIn"
+                    >welcome to shotgear.
+                    </div><!--caption 3-->
+                </li>
+                <!--grid 3-->
+            </ul><!--ul-->
+        </div><!--tp-banner-->
+    </div><!--tp-bannercontainer-->
+
+    <div class="about-our-studio text-center"><!--about-our-studio-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->ABOUT OUR STUDIO</h5>
+            <h2 class="text-uppercase"><!--h2-->
+                THE CAMERA IS AN INSTRUMENT THAT TEACHES<br>PEOPLE HOW TO SEE WITHOUT A CAMERA
+            </h2>
+            <p><!--p-->
+                It’s the end of summer the sweltering heat makes human sweat in the night and makes the plants and trees wilt<br>even in the moonlit nights. The eastern wind breeze brings an eerie feeling, that the monsoon clouds are soon<br>coming, there is a strange silence in the ears, the sky gets darker and darker, the flash of lightning illuminates the<br>dark skies, the sound of thunder fills the heart with fear.
+            </p>
+            <a href="pages/about.html" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                <span></span>
+                <span></span>
+                read more
+            </a><!--btn-custom-->
+        </div><!--container-->
+    </div><!--about-our-studio-->
+
+    <div class="recent-project"><!--recent-project-->
+        <div class="container-fluid"><!--container-fluid-->
+            <h5 class="text-center text-uppercase"><!--h5-->RECENT PROJECT</h5>
+            <h2 class="text-center text-uppercase lighter"><!--h2-->CHECK LATEST WORK</h2>
+            <div class="tabs text-center"><!--tabs-->
+                <span class="text-uppercase"><!--span--><a class="anc custom-a active" data-show=".all">ALL PHOTOS</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".weeding">WEEDING</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".fashion">FASHION</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".portrait">PORTRAIT</a></span>
+                <span class="text-uppercase"><!--span--><a class="anc custom-a" data-show=".magazine">MAGAZINE</a></span>
+            </div><!--tabs-->
+            <div class="gallery"><!--gallery-->
+                <div class="row"><!--row-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all weeding fashion"><!--first grid-->
+                        <div class="item one"><!--item 1-->
+                            <img src="photo/gallery/1.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".one"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".one"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 1-->
+                    </div><!--first grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all portrait magazine"><!--second grid-->
+                        <div class="item two"><!--item 2-->
+                            <img src="photo/gallery/2.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".two"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".two"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 2-->
+                    </div><!--second grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all portrait fashion"><!--third grid-->
+                        <div class="item three"><!--item 3-->
+                            <img src="photo/gallery/3.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".three"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".three"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 3-->
+                    </div><!--third grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all magazine weeding"><!--fourty grid-->
+                        <div class="item four"><!--item 4-->
+                            <img src="photo/gallery/4.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".four"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".four"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 4-->
+                    </div><!--fourty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all weeding magazine"><!--fivty grid-->
+                        <div class="item five"><!--item 5-->
+                            <img src="photo/gallery/5.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".five"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".five"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 5-->
+                    </div><!--fivty grid-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid all fashion portrait"><!--sixty grid-->
+                        <div class="item six"><!--item 6-->
+                            <img src="photo/gallery/6.png" alt="GALLERY"><!--img-->
+                            <div class="over-lay"><!--over-lay-->
+                                <h4 class="text-center text-uppercase"><a href="pages/gallery-details.html" class="anc">details</a></h4><!--h4-->
+                                <div class="zoom-in-out text-center"><!--zoom-in-out-->
+                                    <span class="zoomin" data-zoom=".six"><i class="demo-icon icon-zoom-in">&#xe833;</i></span><!--zoomin-->
+                                </div><!--zoom-in-out-->
+                            </div><!--over-lay-->
+                            <div class="cancel center-block text-center" data-zoom=".six"><!--cancel-->
+                                <i class="demo-icon icon-cancel">&#xe80c;</i><!--icon-->
+                            </div><!--cancel-->
+                        </div><!--item 6-->
+                    </div><!--sixty grid-->
+                </div><!--row-->
+            </div><!--gallery-->
+        </div><!--container-fluid-->
+    </div><!--recent-project-->
+
+    <div class="our-services"><!--our-services-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->OUR SERVICE</h5>
+            <h2 class="text-uppercase lighter"><!--h2-->WHAT WE OFFER</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-xs-12 text-center"><!--first grid-->
+                    <div class="ser text one"><!--ser one-->
+                        <img src="photo/services/favicon.png" alt="favicon"><!--img-->
+                        <h4 class="text-uppercase"><!--h4-->tools PHOTOGRAPHY</h4>
+                        <p><!--p-->World the end of summer the sweltering heat makes human sweat in the night and man plants and trees wilt even Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="pages/services.html" class="text-uppercase rounder-a anc"><!--a-->read more</a>
+                    </div><!--ser one-->
+                </div><!--first grid-->
+                <div class="col-md-8 col-xs-12 hidden-sm hidden-xs"><!--second grid-->
+                    <div class="ser photo two"><!--ser two-->
+                        <img src="photo/services/single_offer_img_1.png" alt="tools"><!--img-->
+                    </div><!--ser two-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-xs-12 hidden-sm hidden-xs"><!--third grid-->
+                    <div class="ser photo three"><!--ser three-->
+                        <img src="photo/services/single_offer_img_2.png" alt="Accuracy"><!--img-->
+                    </div><!--ser three-->
+                </div><!--third grid-->
+                <div class="col-md-8 col-xs-12 text-center"><!--foury grid-->
+                    <div class="ser text four"><!--ser four-->
+                        <img src="photo/services/favicon.png" alt="favicon"><!--img-->
+                        <h4 class="text-uppercase"><!--h4-->Accuracy PHOTOGRAPHY</h4>
+                        <p><!--p-->that the monsoon clouds are soon coming, there is a strange silence in the ears, the sky gets darker and darker, the flash of lightning illuminates the dark skies all time needs band the sound of thunder fills the heart with fear. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt ipsam tempore obcaecati nobis.</p>
+                        <a href="pages/services.html" class="text-uppercase rounder-a anc"><!--a-->read more</a>
+                    </div><!--ser four-->
+                </div><!--foury grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--our-services-->
+
+    <div class="testimonials"><!--testimonials-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->testimonials</h5>
+            <h2 class="text-uppercase text-center lighter"><!--h2-->WHAT OUR CLIENT SAYS</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="photos"><!--photos-->
+                        <img src="photo/testimonials/1.png" alt="customer"><!--img-->
+                    </div><!--photos-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="content"><!--content-->
+                        <div class="testi one"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->jose Anderson,</h4>
+                            <span><!--span job-->Ceo Of Softking</span>
+                        </div><!--testi-->
+                        <div class="testi two"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->Albert Thomson,</h4>
+                            <span><!--span job-->Manager of meipaly</span>
+                        </div><!--testi-->
+                        <div class="testi three"><!--testi-->
+                            <h3 class="text-uppercase"><!--h3-->with efficiency to unlock<br>more opportunities</h3>
+                            <p><!--p-->Saw shall light. Us their to place had creepeth day night great wher appear to. Hath called sea called, gathering where in open make living Female itself gsthering man Waters and, two. Bearing. saw she'd all let she'd all let she'd lights abundantly blessed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque quibusdam vero. Incidunt laboriosam soluta totam voluptatum eligendi.</p>
+                            <h4><!--h4 name-->Mary Andrson,</h4>
+                            <span><!--span job-->Supervisor of Listingo</span>
+                        </div><!--testi-->
+                    </div><!--content-->
+                    <div class="control"><!--control-->
+                        <span class="active" data-fade=".one"></span><!--one-->
+                        <span data-fade=".two"></span><!--two-->
+                        <span data-fade=".three"></span><!--three-->
+                    </div><!--control-->
+                </div><!--second grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--testimonials-->
+
+    <div class="pricing"><!--pricing-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->PRICE TABLE</h5>
+            <h2 class="text-uppercase lighter"><!--h2-->PRICING PLAN</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--first grid-->
+                    <div class="text-center plan"><!--plan-->
+                        <div class="head"><!--head-->
+                            <img src="photo/pricing/feature_icon_1.svg" alt="plan"><!--img-->
+                            <h3 class="text-uppercase"><!--h4-->normal</h3>
+                        </div><!--head-->
+                        <div class="body text-capitalize"><!--body-->
+                            <h2><!--h2-->$10,00</h2>
+                            <p><!--p-->5 photos</p>
+                            <p><!--p-->30 minutes</p>
+                            <p><!--p-->in studio</p>
+                            <p><!--p-->2 members of the team</p>
+                            <p><!--p-->Fast montage</p>
+                            <p><!--p-->Immediate receipt</p>
+                            <a href="pages/reserve-now.html" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                                <span></span>
+                                <span></span>
+                                book now
+                            </a><!--btn-custom-->
+                        </div><!--body-->
+                    </div><!--plan-->
+                </div><!--first grid-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--second grid-->
+                    <div class="text-center plan"><!--plan-->
+                        <div class="head"><!--head-->
+                            <img src="photo/pricing/feature_icon_2.svg" alt="plan"><!--img-->
+                            <h3 class="text-uppercase"><!--h4-->private</h3>
+                        </div><!--head-->
+                        <div class="body text-capitalize"><!--body-->
+                            <h2><!--h2-->$30,00</h2>
+                            <p><!--p-->25photos</p>
+                            <p><!--p-->3 hours</p>
+                            <p><!--p-->In a public place</p>
+                            <p><!--p-->4 members of the team</p>
+                            <p><!--p-->Full montage</p>
+                            <p><!--p-->Receipt within two days</p>
+                            <a href="pages/reserve-now.html" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                                <span></span>
+                                <span></span>
+                                book now
+                            </a><!--btn-custom-->
+                        </div><!--body-->
+                    </div><!--plan-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--third grid-->
+                    <div class="text-center plan"><!--plan-->
+                        <div class="head"><!--head-->
+                            <img src="photo/pricing/feature_icon_3.svg" alt="plan"><!--img-->
+                            <h3 class="text-uppercase"><!--h4-->wedding</h3>
+                        </div><!--head-->
+                        <div class="body text-capitalize"><!--body-->
+                            <h2><!--h2-->$50,00</h2>
+                            <p><!--p-->Unlimited photos</p>
+                            <p><!--p-->1 day</p>
+                            <p><!--p-->all place</p>
+                            <p><!--p-->all team</p>
+                            <p><!--p-->Professional montage</p>
+                            <p><!--p-->Receipt within a week</p>
+                            <a href="pages/reserve-now.html" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                                <span></span>
+                                <span></span>
+                                book now
+                            </a><!--btn-custom-->
+                        </div><!--body-->
+                    </div><!--plan-->
+                </div><!--third grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--pricing-->
+
+    <div class="product"><!--product-->
+        <div class="container"><!--container-->
+            <h5 class="text-center text-uppercase"><!--h5-->DIGITAL PRODUCTS</h5>
+            <h2 class="text-center text-uppercase lighter"><!--h2-->WE will HELP you GROW BUSINESSES.</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--first grid-->
+                    <div class="pro text-center text-uppercase"><!--pro-->
+                        <h3><!--h3-->MODREN DESIGN</h3>
+                        <p><!--p-->Phaseus sit amet tristique lorem ipsum is simply free text ligua donec culis leo sus cipit.</p>
+                        <img src="photo/product/1.png" alt="MODREN DESIGN" class="center-block"><!--img-->
+                        <a href="pages/services.html" class="anc rounder-a">DISCOVER MORE</a><!--rounder-a-->
+                    </div><!--pro-->
+                </div><!--first grid-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--second grid-->
+                    <div class="pro text-center text-uppercase"><!--pro-->
+                        <h3><!--h3-->DIGITAL PRODUCTS</h3>
+                        <p><!--p-->Phaseus sit amet tristique lorem ipsum is simply free text ligua donec culis leo sus cipit.</p>
+                        <img src="photo/product/2.png" alt="DIGITAL PRODUCTS" class="center-block">
+                        <a href="pages/services.html" class="anc rounder-a">DISCOVER MORE</a><!--rounder-a-->
+                    </div><!--pro-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-sm-6 col-xs-12"><!--third grid-->
+                    <div class="pro text-center text-uppercase"><!--pro-->
+                        <h3 class="text-center text-uppercase"><!--h3-->MARKETING STRATEGY</h3>
+                        <p class="text-center text-uppercase"><!--p-->Phaseus sit amet tristique lorem ipsum is simply free text ligua donec culis leo sus cipit.</p>
+                        <img src="photo/product/3.png" alt="MARKETING STRATEGY" class="center-block">
+                        <a href="pages/services.html" class="anc rounder-a">DISCOVER MORE</a>
+                    </div><!--pro-->
+                </div><!--third grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--product-->
+
+    <div class="choose-us"><!--choose-us-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->OUR BENEFITS</h5>
+            <h2 class="text-uppercase lighter"><!--h2-->WHY CHOOSE US</h2>
+            <div class="tabs"><!--tabs-->
+                <div class="row"><!--row-->
+                    <div class="col-md-4 col-xs-12 item one"><!--first grid in tabs-->
+                        <h4 class="text-center text-uppercase"><!--h4-->
+                            <a class="anc custom-a active" data-navsection=".first">latest technology</a>
+                        </h4>
+                    </div><!--first grid in tabs-->
+                    <div class="col-md-4 col-xs-12 item two"><!--second grid in tabs-->
+                        <h4 class="text-center text-uppercase"><!--h4-->
+                            <a class="anc custom-a" data-navsection=".second">awesome support</a>
+                        </h4>
+                    </div><!--second grid in tabs-->
+                    <div class="col-md-4 col-xs-12 item three"><!--third grid in tabs-->
+                        <h4 class="text-center text-uppercase"><!--h4-->
+                            <a class="anc custom-a" data-navsection=".third">1 click demo install</a>
+                        </h4>
+                    </div><!--third grid in tabs-->
+                </div><!--row-->
+            </div><!--tabs-->
+            <div class="parent"><!--parent-->
+                <div class="child first"><!--child first-->
+                    <div class="row"><!--row-->
+                        <div class="col-md-7 col-xs-12"><!--first grid in child first-->
+                            <div class="text"><!--text-->
+                                <p><!--p-->There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                <p class="feat"><!--feat-->
+                                    Self-contained, state-of-the-art time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Scalability of up to 500 employees per time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    The ability to connect up to 32 time clocks
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Employee self-enrollment
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Payroll integration
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Built-in backup camera to verify failed punches
+                                </p><!--feat-->
+                            </div><!--text-->
+                        </div><!--first grid in child first-->
+                        <div class="col-md-5 col-xs-12"><!--second grid in child first-->
+                            <div class="photo"><!--photo-->
+                                <img src="photo/choose-us/1.png" alt="LATEST TECHNOLOGY">
+                            </div><!--photo-->
+                        </div><!--second grid in child first-->
+                    </div><!--row-->
+                </div><!--child first-->
+                <div class="child second"><!--child second-->
+                    <div class="row"><!--row-->
+                        <div class="col-md-5 col-xs-12"><!--first grid in child second-->
+                            <div class="photo"><!--photo-->
+                                <img src="photo/choose-us/2.png" alt="LATEST TECHNOLOGY">
+                            </div><!--photo-->
+                        </div><!--first grid in child second-->
+                        <div class="col-md-7 col-xs-12"><!--second grid in child second-->
+                            <div class="text"><!--text-->
+                                <p><!--p-->There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                <p class="feat"><!--feat-->
+                                    Self-contained, state-of-the-art time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Scalability of up to 500 employees per time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    The ability to connect up to 32 time clocks
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Employee self-enrollment
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Payroll integration
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Built-in backup camera to verify failed punches
+                                </p><!--feat-->
+                            </div><!--text-->
+                        </div><!--second grid in child second-->
+                    </div><!--row-->
+                </div><!--child second-->
+                <div class="child third"><!--child third-->
+                    <div class="row"><!--row-->
+                        <div class="col-md-7 col-xs-12"><!--first grid in child third-->
+                            <div class="text"><!--text-->
+                                <p><!--p-->There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                                <p class="feat"><!--feat-->
+                                    Self-contained, state-of-the-art time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Scalability of up to 500 employees per time clock
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    The ability to connect up to 32 time clocks
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Employee self-enrollment
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Payroll integration
+                                </p><!--feat-->
+                                <p class="feat"><!--feat-->
+                                    Built-in backup camera to verify failed punches
+                                </p><!--feat-->
+                            </div><!--text-->
+                        </div><!--first grid in child third-->
+                        <div class="col-md-5 col-xs-12"><!--second grid in child third-->
+                            <div class="photo"><!--photo-->
+                                <img src="photo/choose-us/3.png" alt="LATEST TECHNOLOGY">
+                            </div><!--photo-->
+                        </div><!--second grid in child third-->
+                    </div><!--row-->
+                </div><!--child third-->
+            </div><!--parent-->
+        </div><!--container-->
+    </div><!--choose-us-->
+
+    <div class="they-trust-us"><!--they-trust-us-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->our clients</h5>
+            <h2 class="text-uppercase text-center lighter"><!--h2-->THEY TRUST US</h2>
+            <div class="row"><!--row-->
+                <div class="col-lg-3 col-sm-6 col-xs-12"><!--first grid-->
+                    <div class="brand"><!--brand-->
+                        <img src="photo/trust/1.png" alt="the barber"><!--img-->
+                        <img src="photo/trust/1.svg" alt="signature" class="center-block"><!--img-->
+                    </div><!--brand-->
+                </div><!--first grid-->
+                <div class="col-lg-3 col-sm-6 col-xs-12"><!--second grid-->
+                    <div class="brand"><!--brand-->
+                        <img src="photo/trust/2.png" alt="delicious"><!--img-->
+                        <img src="photo/trust/3.svg" alt="signature" class="center-block"><!--img-->
+                    </div><!--brand-->
+                </div><!--second grid-->
+                <div class="col-lg-3 col-sm-6 col-xs-12"><!--third grid-->
+                    <div class="brand"><!--brand-->
+                        <img src="photo/trust/3.png" alt="desingers"><!--img-->
+                        <img src="photo/trust/1.svg" alt="signature" class="center-block"><!--img-->
+                    </div><!--brand-->
+                </div><!--third grid-->
+                <div class="col-lg-3 col-sm-6 col-xs-12"><!--fourty grid-->
+                    <div class="brand"><!--brand-->
+                        <img src="photo/trust/4.png" alt="royal cafe"><!--img-->
+                        <img src="photo/trust/3.svg" alt="signature" class="center-block"><!--img-->
+                    </div><!--brand-->
+                </div><!--fourty grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--they-trust-us-->
+
+    <div class="blog"><!--blog-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase"><!--h5-->our blog</h5>
+            <h2 class="text-uppercase lighter"><!--h2-->LATEST BLOG</h2>
+            <div class="row"><!--row-->
+                <div class="col-md-6 col-xs-12"><!--first grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/1.png" alt="blog_1"><!--img-->
+                            <div class="date text-center text-capitalize"><!--date-->
+                                <span>24</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 03 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 06 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--first grid-->
+                <div class="col-md-6 col-xs-12"><!--second grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/2.png" alt="blog_2"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>17</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 22 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 19 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--second grid-->
+                <div class="col-md-6 col-xs-12"><!--third grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/3.png" alt="blog_3"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>15</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 15 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 10 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--third grid-->
+                <div class="col-md-6 col-xs-12"><!--fourty grid-->
+                    <div class="post"><!--post-->
+                        <div class="photo"><!--photo-->
+                            <img src="photo/blog/4.png" alt="blog_4"><!--img-->
+                            <div class="date text-center"><!--date-->
+                                <span>2</span><br>
+                                <span>feb</span>
+                            </div><!--date-->
+                        </div><!--photo-->
+                        <div class="info text-capitalize"><!--info-->
+                            <h4><!--h4--><a href="pages/blog-details.html" class="anc">Google inks pact for new 35-storey office</a></h4>
+                            <p><!--p-->That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <a href="#" class="anc"><!--comments-->
+                                <i class="demo-icon icon-thumbs-up">&#xe81a;</i> 30 likes
+                            </a> | 
+                            <a href="#" class="anc"><!--likes-->
+                                <i class="demo-icon icon-commenting-o">&#xf27b;</i> 16 comments
+                            </a>
+                        </div><!--info-->
+                    </div><!--post-->
+                </div><!--fourty grid-->
+            </div><!--row-->
+        </div><!--container-->
+    </div><!--blog-->
+
+    <div class="subscrib"><!--subscrib-->
+        <div class="container"><!--container-->
+            <h5 class="text-uppercase text-center"><!--h5-->DON’T MISS OUT OUR LATEST UPDATES</h5>
+            <h2 class="text-uppercase text-center"><!--h2-->SUBSCRIBE US</h2>
+            <form class="form-inline" action="#"><!--form-->
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Your E-Mail"><!--input-->
+                <a href="#" class="anc btn btn-custom text-uppercase"><!--btn-custom-->
+                    <span></span>
+                    <span></span>
+                    subscrib now
+                </a><!--btn-custom-->
+            </form><!--form-->
+        </div><!--container-->
+    </div><!--subscrib-->
+
+    <footer><!--footer-->
+        <div class="container"><!--container-->
+            <div class="row"><!--row-->
+                <div class="col-md-4 col-xs-12"><!--first grid-->
+                    <div class="services-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->OUR SERVICE</h3>
+                        <p><a href="#" class="anc">Car accident</a></p><!--p-->
+                        <p><a href="#" class="anc">Personal injury</a></p><!--p-->
+                        <p><a href="#" class="anc">Family law</a></p><!--p-->
+                        <p><a href="#" class="anc">Bank and financial</a></p><!--p-->
+                        <p><a href="#" class="anc">Capital market</a></p><!--p-->
+                        <p><a href="#" class="anc">Employment Law</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--first grid-->
+                <div class="col-md-4 col-xs-12"><!--second grid-->
+                    <div class="contact-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->CONTACT INFO</h3>
+                        <p>4361 Morningview Lane Artland , Pall Street Latimer, IA 50452 / 23654</p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-phone">&#xe82a;</i> +02 - 123 456 789</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-mail">&#xe803;</i> shotgear@mail.com</a></p><!--p-->
+                        <p><a href="#" class="anc"><i class="demo-icon icon-briefcase">&#xe84d;</i> shotgearfirm.inc</a></p><!--p-->
+                    </div><!--foot-->
+                </div><!--second grid-->
+                <div class="col-md-4 col-xs-12"><!--third grid-->
+                    <div class="instgram-foot foot"><!--foot-->
+                        <h3 class="text-uppercase"><!--h3-->INSTAGRAM</h3>
+                        <a href="#"><img src="photo/footer/1.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/2.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/3.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/4.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/5.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/6.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/7.png" alt="INSTAGRAM"></a><!--img-->
+                        <a href="#"><img src="photo/footer/8.png" alt="INSTAGRAM"></a><!--img-->
+                    </div><!--foot-->
+                </div><!--third grid-->
+            </div><!--row-->
+            <div class="share text-center"><!--share-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-facebook">&#xf09a;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-twitter">&#xf099;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-google">&#xf1a0;</i></a></span><!--span social-->
+                <span><!--span social--><a href="#" class="anc"><i class="demo-icon icon-instagram">&#xf16d;</i></a></span><!--span social-->
+            </div><!--share-->
+        </div><!--container-->
+        <div class="copy-right text-center"><!--copy-right-->
+            <p><!--p-->Copyright<i class="demo-icon icon-copyright">&#xf1f9;</i>2020 All rights reserved | This template is made with <i class="demo-icon icon-heart-empty">&#xe805;</i> by <span>shotgear</span></p>
+        </div><!--copy-right-->
+    </footer><!--footer-->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.themepunch.plugins.min.js"></script>
+    <script src="js/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/plugin.js"></script>
+</body>
+</html>

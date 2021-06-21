@@ -1,0 +1,30 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+@import "../layout/slider";
+/*strat radix*/
+.radix {
+    padding: 100px 0 0;
+    @import "../layout/details";
+    @import "../layout/aside-details";
+    .next-prev {
+        /*next-prev in radix*/
+        padding: 80px 0;
+        .prev,
+        .next {
+            /*next , prev in next-prev*/
+            color: $bk;
+            cursor: pointer;
+            @extend %transition3;
+            &:hover {
+                /*when hover on next , prev*/
+                color: $or;
+            }
+        }
+    }
+}
+@import "../helpers/extend";
+/*end radix*/

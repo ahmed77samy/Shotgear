@@ -1,0 +1,301 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+@import "helpers/var";
+@import "helpers/Mixin";
+/*start header*/
+header {
+    nav {
+        /*nav in header*/
+        z-index: 9998;
+        background: $wh;
+        color: $bk;
+        .logo {
+            /*logo in nav*/
+            line-height: 75px;
+            img {
+                /*img in logo*/
+                cursor: pointer;
+            }
+        }
+        .ul {
+            ul {
+                /*ul in .ul in nav*/
+                padding: 0;
+                margin: 0;
+                line-height: 80px;
+                li {
+                    /*li in ul*/
+                    display: inline-block;
+                    margin: 0 10px;
+                    a {
+                        /*a in li*/
+                        cursor: pointer;
+                        &::after,&::before {
+                            /*after & before custom-anchor*/
+                            background: $or;
+                        }
+                        &:hover,&.active {
+                            /*hover on custom-anchor*/
+                            color: $or;
+                        }
+                    }
+                    &.drop {
+                        /*drop li in ul*/
+                        position: relative;
+                        .demo-icon {
+                            /*demo-icon in drop*/
+                            width: 0;
+                            height: 0;
+                        }
+                        .drop-down {
+                            /*drop-down in drop*/
+                            position: absolute;
+                            z-index: 9998;
+                            top: 102%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            background: $or;
+                            padding: 10px 0;
+                            line-height: 50px;
+                            opacity: 0;
+                            visibility: hidden;
+                            border-radius: 5px;
+                            @extend %transition3;
+                            li {
+                                /*li in drop-down*/
+                                color: $wh;
+                                margin: 0 20px;
+                                a {
+                                    /*custom-anchor drop-down*/
+                                    color: inherit;
+                                    &:before,&::after {
+                                        /*before & after custom-anchor drop-down*/
+                                        background: $wh
+                                    }
+                                }
+                            }
+                            &::before {
+                                /*before drop-down*/
+                                content: "";
+                                position: absolute;
+                                top: -5px;
+                                left: calc(50% - 5px);
+                                width: 10px;
+                                height: 10px;
+                                transform: rotate(45deg);
+                                background: $or;
+                            }
+                        }
+                        &:hover {
+                            .drop-down {
+                                /*when hover on drop*/
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu-search {
+            /*menu-search in nav*/
+            line-height: 80px;
+            .demo-icon {
+                /*demo-icon in menu-search*/
+                font-size: 20px;
+                cursor: pointer;
+                @extend %transition3;
+                &:hover {
+                    /*when hover on demo-icon*/
+                    color: $or
+                }
+                &:first-of-type {
+                    /*first demo-icon in menu-search*/
+                    margin-right: 15px;
+                }
+            }
+        }
+        .fixed-search {
+            /*fixed-search in nav*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 9999;
+            display: none;
+            &.open {
+                /*when click on fixed-search*/
+                top: 0;
+                left: 0;
+                pointer-events: all;
+            }
+            .over-lay {
+                /*parent over-lay fixed-search*/
+                width: 100%;
+                height: 100%;
+                background: $bk;
+                opacity: .97;
+                padding: 30px 0 0;
+                form {
+                    /*form in over-lay*/
+                    margin-top: 200px;
+                    border-bottom: 1px solid $wr1;
+                    input.btn {
+                        /*input in form*/
+                        background: transparent;
+                        width: calc(100% - 40px);
+                        padding: 10px 10px;
+                        text-transform: capitalize;
+                        text-align: left;
+                        cursor: text;
+                        font-size: 22px;
+                        color: $wh;
+                    }
+                    .demo-icon {
+                        /*demo-icon in form*/
+                        color: $wh;
+                        font-size: 26px;
+                        line-height: 50px;
+                        cursor: pointer;
+                        @extend %transition3;
+                        &:hover {
+                            /*when hover on demo-icon*/
+                            color: $or;
+                        }
+                    }
+                }
+            }
+        }
+        .fixed-menu {
+            /*fixed-menu in nav*/
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 9999;
+            color: $wh;
+            display: none;
+            &.open {
+                /*when click on fixed-menu*/
+                top: 0;
+                left: 0;
+                pointer-events: all;
+            }
+            .over-lay {
+                /*parent over-lay fixed-menu*/
+                width: 100%;
+                height: 100%;
+                background: $bk;
+                opacity: .97;
+                padding: 30px 0 0;
+                ul {
+                    /*ul in fixed-menu*/
+                    padding: 0;
+                    margin: 30px 0 0;
+                    line-height: 40px;
+                    li {
+                        /*li in ul fixed-menu*/
+                        display: block;
+                        a {
+                            /*a in li fixed-menu*/
+                            cursor: pointer;
+                            &::after,&::before {
+                                /*after & before custom-anchor fixed-menu*/
+                                background: $or;
+                            }
+                            &:hover,&.active {
+                                /*hover a fixed-menu*/
+                                color: $or;
+                            }
+                        }
+                        &.drop {
+                            /*drop fixed-menu*/
+                            position: relative;
+                            .demo-icon {
+                                /*demo-icon in drop fixed-menu*/
+                                width: 0;
+                                height: 0;
+                            }
+                            .drop-down {
+                                /*drop-menu fixed-menu*/
+                                line-height: 40px;
+                                display: none;
+                                li {
+                                    /*li fixed-menu*/
+                                    color: $wh;
+                                    a {
+                                        /*a fixed-menu*/
+                                        color: inherit;
+                                        &:before,&::after {
+                                            /*before & after custom-anchor fixed-menu*/
+                                            background: $wh
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.active {
+            /*nav active when scroll > 200*/
+            background: $or;
+            color: $wh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            .ul {
+                li {
+                    a:hover{
+                        /*a when scroll > 200*/
+                        color: $bk;
+                        &::after {
+                            /*a after when scroll > 200*/
+                            background: $bk
+                        }
+                        &::before {
+                            /*a before when scroll > 200*/
+                            background: $bk
+                        }
+                    }
+                    &.drop {
+                        .drop-down {
+                            /*drop-down in .ul when scroll > 200*/
+                            background: $bk;
+                            &:before {
+                                background: $bk
+                            }
+                            li {
+                                &:hover {
+                                    color: $wh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-search {
+                .demo-icon {
+                    &:hover {
+                        /*demo-icon in menu-search when scroll > 200*/
+                        color: $bk
+                    }
+                }
+            }
+        }
+    }
+}
+@import "helpers/extend";
+/*end header*/

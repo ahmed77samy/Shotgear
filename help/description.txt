@@ -1,0 +1,65 @@
+/*this is description to shotgear*/
+
+- i have used Bree Serif fonts from google fonts (<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">)
+- All images within the site you can change from the photo folder
+- I have used his office Slider Revolution and I will give you its documentation next to this description
+- I have used J query (<script src="../js/jquery-3.4.1.min.js"></script>)
+- I have used bootstrap 3 (<link rel="stylesheet" href="../css/bootstrap.min.css">)
+- I have used icons from fontello (<link rel="stylesheet" href="../css/fontello.min.css">)
+- All files are well commented
+- Everything inside the files has its own comment, to make it easy for you to edit
+- Fully Responsive Design
+- Clean & Simple Design
+- Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome
+
+/************HTML************/
+
+- Within the html pages, these files are called from css or js
+
+<link rel="stylesheet" href="../css/normaliz.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/fontello.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="stylesheet" href="../css/footer.css">
+<link rel="stylesheet" href="../css/style.css">
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.themepunch.plugins.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/global.js"></script>
+<script src="js/plugin.js"></script>
+
+/************HTML************/
+
+
+
+/************css************/
+
+- The CSS files were divided into several parts
+
+- header (Includes header)
+- footer (Includes footer)
+- main (It includes the basic elements)
+- A file for each page
+
+/************css************/
+
+
+
+
+/************js************/
+
+- The js files were divided into several parts
+
+- global (It includes the basic elements)
+- function (To include all functions)
+- A file for each page
+- The context menu button has been blocked to guarantee the rights, and you can remove from the global.js file. /*Prevent default*/
+
+/************js************/

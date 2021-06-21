@@ -1,0 +1,36 @@
+@import "../helpers/var";
+@import "../helpers/Mixin";
+.detail {
+    /*detail in radix*/
+    overflow: hidden;
+    @include xs {
+        margin-bottom: 50px;
+    }
+    @include sm {
+        margin-bottom: 50px;
+    }
+    img.main {
+        /*img in detail*/
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    h4 {
+        /*h4 in detail*/
+        color: $bk;
+    }
+    p {
+        /*p in detail*/
+        color: $wr2;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .similar {
+        /*similar in detail*/
+        padding: 30px 0;
+        img {
+            /*img in similar*/
+            margin: 6px 4px
+        }
+    }
+    
+}

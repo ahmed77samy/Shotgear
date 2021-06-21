@@ -1,0 +1,95 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+/*start footer*/
+footer {
+  padding: 100px 0 0;
+  background: #1e2528;
+  color: #999;
+}
+
+footer .foot {
+  /*foot in footer*/
+  margin-bottom: 40px;
+}
+
+footer .foot h3 {
+  /*h3 in foot*/
+  color: #fff;
+  margin: 0 0 40px;
+}
+
+footer .foot p a {
+  /*a in p*/
+  color: #999;
+}
+
+footer .foot p a:hover {
+  color: #FF4800;
+}
+
+footer .foot.contact-foot p {
+  /*p in contact-foot*/
+  margin-bottom: 20px;
+}
+
+footer .foot.contact-foot p:first-of-type {
+  /*first p in contact-foot*/
+  margin-bottom: 30px;
+}
+
+footer .foot.instgram-foot {
+  text-align: center;
+}
+
+footer .foot.instgram-foot h3 {
+  text-align: left;
+}
+
+footer .foot.instgram-foot img {
+  /*img in instgram-foott*/
+  margin-bottom: 4px;
+}
+
+footer .share {
+  /*share in footer*/
+  margin: 60px 0 40px;
+}
+
+footer .share span .demo-icon {
+  /*demo-icon in share*/
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+footer .share span .demo-icon:hover {
+  /*when hover on demo-icon in share*/
+  color: #FF4800;
+}
+
+footer .copy-right {
+  /*copy-right in footer*/
+  background: #2d3032;
+  padding: 30px 0;
+}
+
+footer .copy-right p {
+  /*p in copy-right*/
+  margin: 0;
+}
+
+footer .copy-right p span, footer .copy-right p .demo-icon:last-of-type {
+  /*span , demo-icon in p in copy-right*/
+  color: #FF4800;
+}
+
+footer .foot p a, footer .share span .demo-icon {
+  /*transition .3s*/
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/*end footer*/

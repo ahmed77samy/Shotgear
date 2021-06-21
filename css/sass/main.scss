@@ -1,0 +1,280 @@
+/*  
+    template-name: shotgear;
+    The owner of the template: ahmed samy;
+    template-version: 1.0;
+    Date created: 22/2/2020
+*/
+@import "helpers/var";
+/*star main*/
+* {
+    /*every thing*/
+    box-sizing: border-box;
+}
+
+body {
+    /*body*/
+    background: $wh;
+    color: $bk;
+    font-family: 'Bree Serif', ;
+    letter-spacing: 1px;
+}
+
+.loading {
+    /*loading*/
+    background: $bk;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    outline: 2px solid red;
+    .loader{
+        /*loader in loading*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px;
+        &::before{
+            /*before loader in loading*/
+            content:"";
+            color: white;
+            height: 50px;
+            width: 50px;
+            box-sizing: content-box;
+            background: transparent;
+            border-radius: 50%;
+            border: 20px solid red;
+            animation: load 1s infinite;
+        }
+        &.stop {
+            &::before {
+                /*when page on ready*/
+                animation: none;
+            }
+        }
+    }
+}
+
+.to-up {
+    /*to-up*/
+    width: 50px;
+    height: 50px;
+    background: $or;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    z-index: 99998;
+    transition: background .5s;
+    &:hover {
+        /*when hover on to-up*/
+        background: $bk;
+    }
+    .demo-icon {
+        /*demo-icon in to-up*/
+        color: $wh;
+        line-height: 50px;
+    }
+}
+
+.cancel {
+    /*div cancel*/
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $wh-opacity-4;
+    &::before {
+        /*before div cancel*/
+        content: "";
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 70px;
+        height: 70px;
+        background: $wh-opacity-3;
+        border-radius: 50%;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
+    .demo-icon {
+        /*icon*/
+        color: $bk;
+        line-height: 70px;
+        font-size: 22px;
+        @extend %transition5;
+    }
+    
+    &:hover {
+        /*hover on div cancel*/
+        &::before{
+            animation-play-state: paused;
+        }
+        .demo-icon {
+            color: $wh
+        }
+    }
+}
+
+.btn-custom {
+    /*btn-custom*/
+    position: relative;
+    background: $bk;
+    padding: 15px 40px;
+    border-radius: 0;
+    overflow: hidden;
+    @extend %transition5;
+    span {
+        /*span in btn-custom*/
+        position: absolute;
+        top:0;
+        width: 10px;
+        height: 300%;
+        background: $or;
+        pointer-events: none;
+        mix-blend-mode: normal;
+        @extend %transition5;
+        &:first-of-type {
+            /*first span in btn-custom*/
+            left: 0;
+            transform: rotate(45deg) translate(-211%, -35%);
+        }
+        &:last-of-type {
+            /*last span in btn-custom*/
+            right: 0;
+            transform: rotate(45deg) translate(-515%, 0%);
+        }
+    }
+    &:hover {
+        /*when hover on btn-custom*/
+        background: $or;
+        span {
+            /*when hover on btn-custom*/
+            width: 100%;
+            transform: rotate(0deg) translate(-0%, -35%);
+            mix-blend-mode: lighten;
+        }
+    }
+}
+
+h2 {
+    /*any h2*/
+    font-size: 40px;
+}
+
+h2.lighter {
+    /*h2 lighter*/
+    color: $lighter;
+    font-size: 50px;
+}
+
+a.custom-a {
+    /*custom-anchor*/
+    position: relative;
+    @extend %transition5;
+    &::after {
+        /*after a*/
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        opacity: 0;
+        @extend %transition5;
+    }
+    &::before {
+        /*before a*/
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left: calc(50% - 2px);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        opacity: 0;
+        @extend %transition5;
+    }
+    &:hover,&.active {
+        &::after {
+            /*when hover on custom-anchor*/
+            opacity: .8;
+            width: 100%
+        }
+        &::before {
+            /*when hover on custom-anchor*/
+            opacity: 1;
+            
+        }
+    }
+}
+
+a.rounder-a {
+    /*anchor rounder-a*/
+    position: relative;
+    color: $bk;
+    @extend %transition3;
+    &::before,&:after {
+        /*before & after rounder-a*/
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 2px;
+        background: $bk;
+        @extend %transition3;
+    }
+    &:before {
+        /*before rounder-a*/
+        left: 105%;
+    }
+    &:after {
+        /*after rounder-a*/
+        right: 105%;
+    }
+    &:hover {
+        /*when hover on rounder-a*/
+        color: $or ;
+        &::before,&:after {
+            /*when hover on rounder-a*/
+            background: $or
+        }
+    }
+}
+@import "helpers/extend";
+/*key frames*/
+@keyframes load{
+    50%{
+        transform:rotatez(180deg);
+        border-style:dashed;
+        border-color:red maroon indianred orangered;
+    }
+    100%{
+        transform:rotatez(360deg);
+    }
+}
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+/*key frames*/
+/*end main*/
